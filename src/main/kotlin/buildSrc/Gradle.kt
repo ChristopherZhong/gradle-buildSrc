@@ -19,7 +19,7 @@ const val `commons-csv`: String = Dependencies.Apache.Commons.csv
 const val `dagger`: String = Dependencies.Dagger.dagger
 const val `dagger-compiler`: String = Dependencies.Dagger.compiler
 const val `guice`: String = Dependencies.Guice.guice
-const val `guice-assisted-inject`: String = Dependencies.Guice.Extensions.`assisted-inject`
+const val `guice-assistedinject`: String = Dependencies.Guice.Extensions.assistedinject
 const val `guice-bom`: String = Dependencies.Guice.bom
 const val `httpcore`: String = Dependencies.Apache.HttpComponents.core
 const val `jackson-bom`: String = Dependencies.Jackson.bom
@@ -56,6 +56,11 @@ object Plugins {
         const val version = "1.2.71"
         const val jvm = "$id.jvm"
         const val kapt = "$id.kapt"
+
+        fun `use-jvm`(spec: PluginDependenciesSpec) = spec.id(jvm)
+        fun `use-kapt`(spec: PluginDependenciesSpec) = spec.id(kapt)
+        fun `add-jvm`(spec: PluginDependenciesSpec) = `use-jvm`(spec) version version
+        fun `add-kapt`(spec: PluginDependenciesSpec) = `use-kapt`(spec) version version
     }
 
     object Spring {
@@ -126,7 +131,7 @@ object Dependencies {
 
         object Extensions {
             const val group = "${Guice.group}.extensions"
-            const val `assisted-inject` = "$group:guice-assistedinject"
+            const val `assistedinject` = "$group:guice-assistedinject"
         }
     }
 
