@@ -1,6 +1,16 @@
 package buildSrc
 
+import buildSrc.Dependencies.Apache
+import buildSrc.Dependencies.AssertJ
+import buildSrc.Dependencies.Aws
+import buildSrc.Dependencies.Dagger
+import buildSrc.Dependencies.Guice
+import buildSrc.Dependencies.Jackson
 import buildSrc.Dependencies.Junit
+import buildSrc.Dependencies.Log4j
+import buildSrc.Dependencies.Lombok
+import buildSrc.Dependencies.Mockito
+import buildSrc.Dependencies.SpringBoot
 import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 
@@ -8,40 +18,41 @@ object Gradle {
     const val version = "4.10.2"
 }
 
-const val `assertj-core`: String = Dependencies.AssertJ.core
-const val `aws-java-sdk-bom`: String = Dependencies.Aws.Java.bom
-const val `aws-java-sdk-dynamodb`: String = Dependencies.Aws.Java.`dynamo-db`
-const val `aws-java-sdk-ecs`: String = Dependencies.Aws.Java.ecs
-const val `aws-java-sdk-s3`: String = Dependencies.Aws.Java.s3
-const val `aws-lambda-java-core`: String = Dependencies.Aws.Lambda.core
-const val `aws-lambda-java-events`: String = Dependencies.Aws.Lambda.events
-const val `aws-lambda-java-log4j2`: String = Dependencies.Aws.Lambda.log4j2
-const val `commons-csv`: String = Dependencies.Apache.Commons.csv
-const val dagger: String = Dependencies.Dagger.dagger
-const val `dagger-compiler`: String = Dependencies.Dagger.compiler
-const val guice: String = Dependencies.Guice.guice
-const val `guice-assisted-inject`: String = Dependencies.Guice.Extensions.`assisted-inject`
-const val `guice-bom`: String = Dependencies.Guice.bom
-const val httpcore: String = Dependencies.Apache.HttpComponents.core
-const val `jackson-bom`: String = Dependencies.Jackson.bom
-const val `jackson-dataformat-yaml`: String = Dependencies.Jackson.DataFormat.yaml
-const val `junit-jupiter-api`: String = Dependencies.Junit.Jupiter.api
-const val `junit-bom`: String = Dependencies.Junit.bom
-const val `junit-jupiter-engine`: String = Dependencies.Junit.Jupiter.engine
-const val `junit-jupiter-params`: String = Dependencies.Junit.Jupiter.params
-const val `junit-vintage-engine`: String = Dependencies.Junit.Vintage.engine
-const val `log4j-1_2-api`: String = Dependencies.Log4j.`1_2-api`
-const val `log4j-api`: String = Dependencies.Log4j.api
-const val `log4j-bom`: String = Dependencies.Log4j.bom
-const val `log4j-core`: String = Dependencies.Log4j.core
-const val `log4j-jcl`: String = Dependencies.Log4j.jcl
-const val `log4j-slf4j-impl`: String = Dependencies.Log4j.`slf4j-impl`
-const val `mockito-core`: String = Dependencies.Mockito.core
-const val `spring-boot-configuration-processor`: String = Dependencies.SpringBoot.`configuration-processor`
-const val `spring-boot-starter`: String = Dependencies.SpringBoot.starter
-const val `spring-boot-starter-log4j2`: String = Dependencies.SpringBoot.log4j2
-const val `spring-boot-starter-parent`: String = Dependencies.SpringBoot.bom
-const val `spring-boot-starter-test`: String = Dependencies.SpringBoot.test
+const val `assertj-core`: String = "${AssertJ.group}:${AssertJ.core}:${AssertJ.version}"
+const val `aws-java-sdk-bom`: String = "${Aws.group}:${Aws.Java.bom}:${Aws.Java.version}"
+const val `aws-java-sdk-dynamodb`: String = "${Aws.group}:${Aws.Java.dynamodb}"
+const val `aws-java-sdk-ecs`: String = "${Aws.group}:${Aws.Java.ecs}"
+const val `aws-java-sdk-s3`: String = "${Aws.group}:${Aws.Java.s3}"
+const val `aws-lambda-java-core`: String = "${Aws.group}:${Aws.Lambda.core}"
+const val `aws-lambda-java-events`: String = "${Aws.group}:${Aws.Lambda.events}"
+const val `aws-lambda-java-log4j2`: String = "${Aws.group}:${Aws.Lambda.log4j2}"
+const val `commons-csv`: String = "${Apache.Commons.group}:${Apache.Commons.csv}:${Apache.Commons.version}"
+const val dagger: String = "${Dagger.group}:${Dagger.dagger}:${Dagger.version}"
+const val `dagger-compiler`: String = "${Dagger.group}:${Dagger.compiler}:${Dagger.version}"
+const val guice: String = "${Guice.group}:${Guice.guice}"
+const val `guice-assistedinject`: String = "${Guice.Extensions.group}:${Guice.Extensions.assistedinject}"
+const val `guice-bom`: String = "${Guice.group}:${Guice.bom}:${Guice.version}"
+const val httpcore: String = "${Apache.HttpComponents.group}:${Apache.HttpComponents.httpcore}:${Apache.HttpComponents.version}"
+const val `jackson-bom`: String = "${Jackson.group}:${Jackson.bom}:${Jackson.version}"
+const val `jackson-dataformat-yaml`: String = "${Jackson.DataFormat.group}:${Jackson.DataFormat.yaml}"
+const val `junit-jupiter-api`: String = "${Junit.Jupiter.group}:${Junit.Jupiter.api}"
+const val `junit-bom`: String = "${Junit.group}:${Junit.bom}:${Junit.version}"
+const val `junit-jupiter-engine`: String = "${Junit.Jupiter.group}:${Junit.Jupiter.engine}"
+const val `junit-jupiter-params`: String = "${Junit.Jupiter.group}:${Junit.Jupiter.params}"
+const val `junit-vintage-engine`: String = "${Junit.Vintage.group}:${Junit.Vintage.engine}"
+const val `log4j-1_2-api`: String = "${Log4j.group}:${Log4j.`1_2-api`}"
+const val `log4j-api`: String = "${Log4j.group}:${Log4j.api}"
+const val `log4j-bom`: String = "${Log4j.group}:${Log4j.bom}:${Log4j.version}"
+const val `log4j-core`: String = "${Log4j.group}:${Log4j.core}"
+const val `log4j-jcl`: String = "${Log4j.group}:${Log4j.jcl}"
+const val `log4j-slf4j-impl`: String = "${Log4j.group}:${Log4j.`slf4j-impl`}"
+const val lombok: String = "${Lombok.group}:${Lombok.lombok}:${Lombok.version}"
+const val `mockito-core`: String = "${Mockito.group}:${Mockito.core}:${Mockito.version}"
+const val `spring-boot-configuration-processor`: String = "${SpringBoot.group}:${SpringBoot.`configuration-processor`}"
+const val `spring-boot-starter`: String = "${SpringBoot.group}:${SpringBoot.starter}"
+const val `spring-boot-starter-log4j2`: String = "${SpringBoot.group}:${SpringBoot.log4j2}"
+const val `spring-boot-starter-parent`: String = "${SpringBoot.group}:${SpringBoot.parent}:${SpringBoot.version}"
+const val `spring-boot-starter-test`: String = "${SpringBoot.group}:${SpringBoot.test}"
 
 object Plugins {
     object Bintray {
@@ -76,65 +87,64 @@ object Dependencies {
 
         object Commons {
             const val group = "${Apache.group}.commons"
-            const val csv = "$group:commons-csv:1.5"
+            const val version = "1.5"
+            const val csv = "$group:commons-csv:$version"
         }
 
         object HttpComponents {
             const val group = "${Apache.group}.httpcomponents"
-            const val core = "$group:httpcore:4.4.10"
+            const val version = "4.4.10"
+            const val httpcore = "httpcore"
         }
     }
 
     object AssertJ {
         const val group = "org.assertj"
         const val version = "3.11.1"
-        const val core = "$group:assertj-core:$version"
+        const val core = "assertj-core"
     }
 
     object Aws {
         const val group = "com.amazonaws"
-        private const val id = "aws"
 
         object Java {
-            private const val id = "${Aws.id}-java-sdk"
             const val version = "1.11.414"
-            const val bom = "$group:$id-bom:$version"
-            const val `dynamo-db` = "$group:$id-dynamodb"
-            const val ecs = "$group:$id-ecs"
-            const val s3 = "$group:$id-s3"
+            const val bom = "aws-java-sdk-bom"
+            const val dynamodb = "aws-java-sdk-dynamodb"
+            const val ecs = "aws-java-sdk-ecs"
+            const val s3 = "aws-java-sdk-s3"
         }
 
         object Lambda {
-            private const val id = "${Aws.id}-lambda-java"
-            const val core = "$group:$id-core:1.2.0"
-            const val events = "$group:$id-events:2.2.2"
-            const val log4j2 = "$group:$id-log4j2:1.1.0"
+            const val core = "$group:aws-lambda-java-core:1.2.0"
+            const val events = "$group:aws-lambda-java-events:2.2.2"
+            const val log4j2 = "$group:aws-lambda-java-log4j2:1.1.0"
         }
     }
 
     object Dagger {
         const val group = "com.google.dagger"
         const val version = "2.17"
-        const val compiler = "$group:dagger-compiler:$version"
-        const val dagger = "$group:dagger:$version"
+        const val compiler = "dagger-compiler"
+        const val dagger = "dagger"
     }
 
     object Guice {
         const val group = "com.google.inject"
         const val version = "4.2.0"
-        const val bom = "$group:guice-bom:$version"
-        const val guice = "$group:guice"
+        const val bom = "guice-bom"
+        const val guice = "guice"
 
         object Extensions {
             const val group = "${Guice.group}.extensions"
-            const val `assisted-inject` = "$group:guice-assistedinject"
+            const val assistedinject = "guice-assistedinject"
         }
     }
 
     object Jackson {
         const val group = "com.fasterxml.jackson"
         const val version = "2.9.7"
-        const val bom = "$group:jackson-bom:$version"
+        const val bom = "jackson-bom"
 
         object Core {
             const val group = "${Jackson.group}.core"
@@ -149,52 +159,51 @@ object Dependencies {
     object Junit {
         const val group = "org.junit"
         const val version = "5.3.1"
-        const val bom = "$group:junit-bom:$version"
+        const val bom = "junit-bom"
 
         object Jupiter {
             const val group = "${Junit.group}.jupiter"
-            const val api = "$group:junit-jupiter-api"
-            const val engine = "$group:junit-jupiter-engine"
-            const val params = "$group:junit-jupiter-params"
+            const val api = "junit-jupiter-api"
+            const val engine = "junit-jupiter-engine"
+            const val params = "junit-jupiter-params"
         }
 
         object Vintage {
             const val group = "${Junit.group}.vintage"
-            const val engine = "$group:junit-vintage-engine"
+            const val engine = "junit-vintage-engine"
         }
     }
 
     object Log4j {
         const val group = "org.apache.logging.log4j"
         const val version = "2.11.1"
-        const val `1_2-api` = "$group:log4j-1.2-api"
-        const val api = "$group:log4j-api"
-        const val bom = "$group:log4j-bom:$version"
-        const val core = "$group:log4j-core"
-        const val jcl = "$group:log4j-jcl"
-        const val `slf4j-impl` = "$group:log4j-slf4j-impl"
+        const val `1_2-api` = "log4j-1.2-api"
+        const val api = "log4j-api"
+        const val bom = "log4j-bom"
+        const val core = "log4j-core"
+        const val jcl = "log4j-jcl"
+        const val `slf4j-impl` = "log4j-slf4j-impl"
     }
 
     object Lombok {
         const val group = "org.projectlombok"
         const val version = "1.18.2"
-        const val lombok = "$group:lombok:$version"
+        const val lombok = "lombok"
     }
 
     object Mockito {
         const val group = "org.mockito"
         const val version = "2.21.0"
-        const val core = "$group:mockito-core:$version"
+        const val core = "mockito-core"
     }
 
     object SpringBoot {
         const val group = "org.springframework.boot"
-        const val id = "spring-boot"
         const val version = "2.0.5.RELEASE"
-        const val bom = "$group:$id-starter-parent:$version"
-        const val `configuration-processor` = "$group:$id-configuration-processor"
-        const val log4j2 = "$group:$id-starter-log4j2"
-        const val starter = "$group:$id-starter"
-        const val test = "$group:$id-starter-test"
+        const val `configuration-processor` = "spring-boot-configuration-processor"
+        const val log4j2 = "$group:spring-boot-starter-log4j2"
+        const val parent = "spring-boot-starter-parent"
+        const val starter = "$group:spring-boot-starter"
+        const val test = "$group:spring-boot-starter-test"
     }
 }
