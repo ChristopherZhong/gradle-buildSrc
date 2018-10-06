@@ -1,5 +1,6 @@
 package buildSrc
 
+import buildSrc.Dependencies.Junit
 import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 
@@ -16,12 +17,12 @@ const val `aws-lambda-java-core`: String = Dependencies.Aws.Lambda.core
 const val `aws-lambda-java-events`: String = Dependencies.Aws.Lambda.events
 const val `aws-lambda-java-log4j2`: String = Dependencies.Aws.Lambda.log4j2
 const val `commons-csv`: String = Dependencies.Apache.Commons.csv
-const val `dagger`: String = Dependencies.Dagger.dagger
+const val dagger: String = Dependencies.Dagger.dagger
 const val `dagger-compiler`: String = Dependencies.Dagger.compiler
-const val `guice`: String = Dependencies.Guice.guice
+const val guice: String = Dependencies.Guice.guice
 const val `guice-assisted-inject`: String = Dependencies.Guice.Extensions.`assisted-inject`
 const val `guice-bom`: String = Dependencies.Guice.bom
-const val `httpcore`: String = Dependencies.Apache.HttpComponents.core
+const val httpcore: String = Dependencies.Apache.HttpComponents.core
 const val `jackson-bom`: String = Dependencies.Jackson.bom
 const val `jackson-dataformat-yaml`: String = Dependencies.Jackson.DataFormat.yaml
 const val `junit-jupiter-api`: String = Dependencies.Junit.Jupiter.api
