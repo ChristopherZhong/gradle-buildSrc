@@ -93,7 +93,7 @@ object Dependencies {
         object Commons {
             const val group = "${Apache.group}.commons"
             const val version = "1.5"
-            const val csv = "$group:commons-csv:$version"
+            const val csv = "commons-csv"
         }
 
         object HttpComponents {
@@ -157,7 +157,7 @@ object Dependencies {
 
         object DataFormat {
             const val group = "${Jackson.group}.dataformat"
-            const val yaml = "$group:jackson-dataformat-yaml"
+            const val yaml = "jackson-dataformat-yaml"
         }
     }
 
@@ -206,9 +206,9 @@ object Dependencies {
         const val group = "org.springframework.boot"
         const val version = "2.0.5.RELEASE"
         const val `configuration-processor` = "spring-boot-configuration-processor"
-        const val log4j2 = "$group:spring-boot-starter-log4j2"
+        const val log4j2 = "spring-boot-starter-log4j2"
         const val parent = "spring-boot-starter-parent"
-        const val starter = "$group:spring-boot-starter"
-        const val test = "$group:spring-boot-starter-test"
+        const val starter = "spring-boot-starter"
+        const val test = "spring-boot-starter-test"
     }
 }
