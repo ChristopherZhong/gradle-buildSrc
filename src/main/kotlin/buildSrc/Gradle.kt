@@ -121,9 +121,9 @@ object Dependencies {
         }
 
         object Lambda {
-            const val core = "$group:aws-lambda-java-core:1.2.0"
-            const val events = "$group:aws-lambda-java-events:2.2.2"
-            const val log4j2 = "$group:aws-lambda-java-log4j2:1.1.0"
+            const val core = "aws-lambda-java-core:1.2.0"
+            const val events = "aws-lambda-java-events:2.2.2"
+            const val log4j2 = "aws-lambda-java-log4j2:1.1.0"
         }
     }
 
