@@ -1,16 +1,14 @@
-package buildSrc
-
-import buildSrc.Dependencies.Apache
-import buildSrc.Dependencies.AssertJ
-import buildSrc.Dependencies.Aws
-import buildSrc.Dependencies.Dagger
-import buildSrc.Dependencies.Guice
-import buildSrc.Dependencies.Jackson
-import buildSrc.Dependencies.Junit
-import buildSrc.Dependencies.Log4j
-import buildSrc.Dependencies.Lombok
-import buildSrc.Dependencies.Mockito
-import buildSrc.Dependencies.SpringBoot
+import Dependencies.Apache
+import Dependencies.AssertJ
+import Dependencies.Aws
+import Dependencies.Dagger
+import Dependencies.Guice
+import Dependencies.Jackson
+import Dependencies.Junit
+import Dependencies.Log4j
+import Dependencies.Lombok
+import Dependencies.Mockito
+import Dependencies.SpringBoot
 import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 
