@@ -63,7 +63,7 @@ object Plugins {
 
     object Kotlin {
         const val id = "org.jetbrains.kotlin"
-        const val version = "1.2.71"
+        const val version = "1.3.0"
         const val jvm = "$id.jvm"
         const val kapt = "$id.kapt"
 
