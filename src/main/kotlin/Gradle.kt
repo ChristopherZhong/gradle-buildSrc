@@ -202,7 +202,7 @@ object Dependencies {
 
     object SpringBoot {
         const val group = "org.springframework.boot"
-        const val version = "2.0.5.RELEASE"
+        const val version = "2.1.0.RELEASE"
         const val `configuration-processor` = "spring-boot-configuration-processor"
         const val log4j2 = "spring-boot-starter-log4j2"
         const val parent = "spring-boot-starter-parent"
