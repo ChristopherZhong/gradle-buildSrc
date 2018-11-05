@@ -57,8 +57,7 @@ object Plugins {
         const val id = "com.jfrog.bintray"
         const val version = "1.8.4"
 
-        fun use(spec: PluginDependenciesSpec) = spec.id(id)
-        fun add(spec: PluginDependenciesSpec) = use(spec) version version
+        fun apply(spec: PluginDependenciesSpec) = spec.id(id) version version
     }
 
     object Kotlin {
@@ -67,10 +66,8 @@ object Plugins {
         const val jvm = "$id.jvm"
         const val kapt = "$id.kapt"
 
-        fun `use-jvm`(spec: PluginDependenciesSpec) = spec.id(jvm)
-        fun `use-kapt`(spec: PluginDependenciesSpec) = spec.id(kapt)
-        fun `add-jvm`(spec: PluginDependenciesSpec) = `use-jvm`(spec) version version
-        fun `add-kapt`(spec: PluginDependenciesSpec) = `use-kapt`(spec) version version
+        fun `apply-jvm`(spec: PluginDependenciesSpec) = spec.id(jvm) version version
+        fun `apply-kapt`(spec: PluginDependenciesSpec) = spec.id(kapt) version version
     }
 
     object Spring {
@@ -78,15 +75,13 @@ object Plugins {
             const val id = "org.springframework.boot"
             const val version = Dependencies.SpringBoot.version
 
-            fun use(spec: PluginDependenciesSpec) = spec.id(id)
-            fun apply(spec: PluginDependenciesSpec) = use(spec) version version
+            fun apply(spec: PluginDependenciesSpec) = spec.id(id) version version
         }
         object DependencyManagement {
             const val id = "io.spring.dependency-management"
             const val version = "1.0.6.RELEASE"
 
-            fun use(spec: PluginDependenciesSpec) = spec.id(id)
-            fun add(spec: PluginDependenciesSpec) = use(spec) version version
+            fun apply(spec: PluginDependenciesSpec) = spec.id(id) version version
         }
     }
 }
