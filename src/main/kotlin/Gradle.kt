@@ -13,7 +13,7 @@ import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 
 object Gradle {
-    const val version = "4.10.2"
+    const val version = "5.0-rc-1"
 }
 
 const val `assertj-core`: String = "${AssertJ.group}:${AssertJ.core}:${AssertJ.version}"
