@@ -74,6 +74,13 @@ object Plugins {
     }
 
     object Spring {
+        object Boot {
+            const val id = "org.springframework.boot"
+            const val version = Dependencies.SpringBoot.version
+
+            fun use(spec: PluginDependenciesSpec) = spec.id(id)
+            fun apply(spec: PluginDependenciesSpec) = use(spec) version version
+        }
         object DependencyManagement {
             const val id = "io.spring.dependency-management"
             const val version = "1.0.6.RELEASE"
