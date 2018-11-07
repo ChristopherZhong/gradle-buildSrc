@@ -1,6 +1,8 @@
+package org.projectlombok
+
 object Lombok {
     const val group = "org.projectlombok"
-    const val version = "1.18.2"
+    const val version = "1.18.4"
     const val lombok = "lombok"
 }
 

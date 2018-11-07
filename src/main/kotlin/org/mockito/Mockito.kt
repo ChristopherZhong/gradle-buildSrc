@@ -1,3 +1,5 @@
+package org.mockito
+
 object Mockito {
     const val group = "org.mockito"
     const val version = "2.21.0"

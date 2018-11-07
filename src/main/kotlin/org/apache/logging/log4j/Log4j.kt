@@ -1,3 +1,5 @@
+package org.apache.logging.log4j
+
 object Log4j {
     const val group = "org.apache.logging.log4j"
     const val version = "2.11.1"

@@ -1,0 +1,7 @@
+package com.fasterxml.jackson.core
+
+import com.fasterxml.jackson.Jackson
+
+object Core {
+    const val group = "${Jackson.group}.core"
+}
