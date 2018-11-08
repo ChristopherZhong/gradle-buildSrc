@@ -4,4 +4,4 @@ import org.gradle.plugin.use.PluginDependencySpec
 import org.springframework.boot.SpringBoot
 
 inline val PluginDependenciesSpec.`spring-boot`: PluginDependencySpec
-    get() = id(SpringBoot.group) version SpringBoot.version
+    get() = id(SpringBoot.GROUP) version SpringBoot.VERSION
