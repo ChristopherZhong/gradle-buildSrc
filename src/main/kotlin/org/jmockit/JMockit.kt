@@ -2,7 +2,7 @@ package org.jmockit
 
 object JMockit {
     const val GROUP = "org.jmockit"
-    const val VERSION = "1.44"
+    const val VERSION = "1.43"
     // libraries below
     const val JMOCKIT = "jmockit"
 }
