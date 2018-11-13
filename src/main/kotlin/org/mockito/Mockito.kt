@@ -2,7 +2,7 @@ package org.mockito
 
 object Mockito {
     const val GROUP = "org.mockito"
-    const val VERSION = "2.21.0"
+    const val VERSION = "2.23.0"
     // libraries below
     const val CORE = "mockito-core"
 }
