@@ -3,12 +3,13 @@ package org.junit.jupiter
 import org.junit.JUnit
 
 object Jupiter {
-    const val group = "${JUnit.group}.jupiter"
-    const val api = "junit-jupiter-api"
-    const val engine = "junit-jupiter-engine"
-    const val params = "junit-jupiter-params"
+    const val GROUP = "${JUnit.GROUP}.jupiter"
+    // libraries below
+    const val API = "junit-jupiter-api"
+    const val ENGINE = "junit-jupiter-engine"
+    const val PARAMS = "junit-jupiter-params"
 }
 
-const val `junit-jupiter-api`: String = "${Jupiter.group}:${Jupiter.api}"
-const val `junit-jupiter-engine`: String = "${Jupiter.group}:${Jupiter.engine}"
-const val `junit-jupiter-params`: String = "${Jupiter.group}:${Jupiter.params}"
+const val `junit-jupiter-api`: String = "${Jupiter.GROUP}:${Jupiter.API}"
+const val `junit-jupiter-engine`: String = "${Jupiter.GROUP}:${Jupiter.ENGINE}"
+const val `junit-jupiter-params`: String = "${Jupiter.GROUP}:${Jupiter.PARAMS}"

@@ -3,9 +3,10 @@ package org.apache.httpcomponents
 import org.apache.Apache
 
 object HttpComponents {
-    const val group = "${Apache.group}.httpcomponents"
-    const val version = "4.4.10"
-    const val httpcore = "httpcore"
+    const val GROUP = "${Apache.GROUP}.httpcomponents"
+    const val VERSION = "4.4.10"
+    // libraries below
+    const val HTTPCORE = "httpcore"
 }
 
-const val httpcore: String = "${HttpComponents.group}:${HttpComponents.httpcore}:${HttpComponents.version}"
+const val httpcore: String = "${HttpComponents.GROUP}:${HttpComponents.HTTPCORE}:${HttpComponents.VERSION}"

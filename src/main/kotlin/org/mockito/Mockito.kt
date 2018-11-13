@@ -1,9 +1,10 @@
 package org.mockito
 
 object Mockito {
-    const val group = "org.mockito"
-    const val version = "2.21.0"
-    const val core = "mockito-core"
+    const val GROUP = "org.mockito"
+    const val VERSION = "2.21.0"
+    // libraries below
+    const val CORE = "mockito-core"
 }
 
-const val `mockito-core`: String = "${Mockito.group}:${Mockito.core}:${Mockito.version}"
+const val `mockito-core`: String = "${Mockito.GROUP}:${Mockito.CORE}:${Mockito.VERSION}"

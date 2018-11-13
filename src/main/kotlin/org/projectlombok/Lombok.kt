@@ -1,9 +1,10 @@
 package org.projectlombok
 
 object Lombok {
-    const val group = "org.projectlombok"
-    const val version = "1.18.4"
-    const val lombok = "lombok"
+    const val GROUP = "org.projectlombok"
+    const val VERSION = "1.18.4"
+    // libraries below
+    const val LOMBOK = "lombok"
 }
 
-const val lombok: String = "${Lombok.group}:${Lombok.lombok}:${Lombok.version}"
+const val lombok: String = "${Lombok.GROUP}:${Lombok.LOMBOK}:${Lombok.VERSION}"

@@ -1,9 +1,10 @@
 package org.assertj
 
 object AssertJ {
-    const val group = "org.assertj"
-    const val version = "3.11.1"
-    const val core = "assertj-core"
+    const val GROUP = "org.assertj"
+    const val VERSION = "3.11.1"
+    // libraries below
+    const val CORE = "assertj-core"
 }
 
-const val `assertj-core`: String = "${AssertJ.group}:${AssertJ.core}:${AssertJ.version}"
+const val `assertj-core`: String = "${AssertJ.GROUP}:${AssertJ.CORE}:${AssertJ.VERSION}"
