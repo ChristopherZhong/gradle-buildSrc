@@ -1,3 +1,3 @@
 object Gradle {
-    const val VERSION = "5.0-rc-1"
+    const val VERSION = "5.0-rc-2"
 }
