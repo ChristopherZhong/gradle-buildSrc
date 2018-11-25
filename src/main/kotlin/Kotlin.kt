@@ -4,7 +4,18 @@ import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 import org.jetbrains.kotlin.Kotlin
 
-inline val PluginDependenciesSpec.`kotlin-jvm`: PluginDependencySpec
-    get() = kotlin("jvm") version Kotlin.VERSION
-inline val PluginDependenciesSpec.`kotlin-kapt`: PluginDependencySpec
-    get() = kotlin("kapt") version Kotlin.VERSION
+fun PluginDependenciesSpec.`kotlin-jvm`(
+    version: String = Kotlin.VERSION,
+    includeVersion: Boolean = true
+): PluginDependencySpec {
+    val id = kotlin("jvm")
+    return if (includeVersion) id version version else id
+}
+
+fun PluginDependenciesSpec.`kotlin-kapt`(
+    version: String = Kotlin.VERSION,
+    includeVersion: Boolean = true
+): PluginDependencySpec {
+    val id = kotlin("kapt")
+    return if (includeVersion) id version version else id
+}

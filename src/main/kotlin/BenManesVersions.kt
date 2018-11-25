@@ -3,5 +3,10 @@ import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
-inline val PluginDependenciesSpec.`gradle-versions-plugin`: PluginDependencySpec
-    get() = id(Versions.ID) version Versions.VERSION
+fun PluginDependenciesSpec.`gradle-versions-plugin`(
+    version: String = Versions.VERSION,
+    includeVersion: Boolean = true
+): PluginDependencySpec {
+    val id = id(Versions.ID)
+    return if (includeVersion) id version version else id
+}

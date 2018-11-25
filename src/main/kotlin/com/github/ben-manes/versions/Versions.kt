@@ -1,6 +1,6 @@
 package com.github.`ben-manes`.versions
 
-object Versions{
+object Versions {
     const val ID = "com.github.ben-manes.versions"
     const val VERSION = "0.20.0"
     // libraries below
