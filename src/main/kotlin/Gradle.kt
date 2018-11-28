@@ -3,7 +3,7 @@ import org.gradle.api.artifacts.*
 import org.gradle.kotlin.dsl.TaskContainerScope
 
 object Gradle {
-    const val VERSION = "5.0-rc-5"
+    const val VERSION = "5.0"
 }
 
 fun TaskContainerScope.projectInfo() = register("projectInfo") {
