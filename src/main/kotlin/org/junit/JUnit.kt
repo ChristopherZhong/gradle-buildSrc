@@ -2,7 +2,7 @@ package org.junit
 
 object JUnit {
     const val GROUP = "org.junit"
-    const val VERSION = "5.3.1"
+    const val VERSION = "5.3.2"
     // libraries below
     const val BOM = "junit-bom"
 }
