@@ -5,7 +5,7 @@ import org.springframework.boot.SpringBoot.VERSION
 
 object SpringBoot {
     const val GROUP = "org.springframework.boot"
-    const val VERSION = "2.1.0.RELEASE"
+    const val VERSION = "2.1.1.RELEASE"
     // libraries below
     const val NAME = "spring-boot"
     const val ACTUATOR = "$NAME-actuator"
