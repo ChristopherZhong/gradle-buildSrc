@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.DependencyHandlerScope
+
 object Mockito {
     const val GROUP = "org.mockito"
     const val VERSION = "2.23.4"
@@ -8,5 +10,7 @@ object Mockito {
     }
 }
 
-const val `mockito-core` = "${Mockito.GROUP}:${Mockito.Dependencies.CORE}:${Mockito.VERSION}"
-const val `mockito-junit-jupiter` = "${Mockito.GROUP}:${Mockito.Dependencies.JUNIT_JUPITER}:${Mockito.VERSION}"
+val DependencyHandlerScope.`mockito-core`: String
+    get() = "${Mockito.GROUP}:${Mockito.Dependencies.CORE}:${Mockito.VERSION}"
+val DependencyHandlerScope.`mockito-junit-jupiter`: String
+    get() = "${Mockito.GROUP}:${Mockito.Dependencies.JUNIT_JUPITER}:${Mockito.VERSION}"
