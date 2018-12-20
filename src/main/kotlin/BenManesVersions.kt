@@ -5,9 +5,14 @@ import org.gradle.plugin.use.PluginDependencySpec
 object BenManesVersions {
     const val GROUP = "com.github.ben-manes.versions"
     const val VERSION = "0.20.0"
-    // libraries below
-    const val NAME = "gradle-versions-plugin"
+
+    internal object Dependencies {
+        const val NAME = "gradle-versions-plugin"
+    }
 }
+
+val PluginDependenciesSpec.`gradle-versions-plugin`: PluginDependencySpec
+    get() = `gradle-versions-plugin`()
 
 fun PluginDependenciesSpec.`gradle-versions-plugin`(
     version: String = BenManesVersions.VERSION,
