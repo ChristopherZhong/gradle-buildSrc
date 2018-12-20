@@ -1,3 +1,4 @@
+import org.gradle.kotlin.dsl.DependencyHandlerScope
 import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
@@ -20,6 +21,9 @@ object Kotlin {
     }
 }
 
+val PluginDependenciesSpec.`kotlin-jvm`: PluginDependencySpec
+    get() = `kotlin-jvm`()
+
 fun PluginDependenciesSpec.`kotlin-jvm`(
     version: String = Kotlin.VERSION,
     includeVersion: Boolean = true
@@ -27,6 +31,9 @@ fun PluginDependenciesSpec.`kotlin-jvm`(
     val id = id(Kotlin.Plugins.JVM)
     return if (includeVersion) id version version else id
 }
+
+val PluginDependenciesSpec.`kotlin-kapt`: PluginDependencySpec
+    get() = `kotlin-kapt`()
 
 fun PluginDependenciesSpec.`kotlin-kapt`(
     version: String = Kotlin.VERSION,
@@ -36,8 +43,13 @@ fun PluginDependenciesSpec.`kotlin-kapt`(
     return if (includeVersion) id version version else id
 }
 
-const val `kotlin-reflect` = "${Kotlin.GROUP}:${Kotlin.Dependencies.REFLECT}:${Kotlin.VERSION}"
-const val `kotlin-stdlib` = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB}:${Kotlin.VERSION}"
-const val `kotlin-stdlib-jdk8` = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB_JDK8}:${Kotlin.VERSION}"
-const val `kotlin-test` = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST}:${Kotlin.VERSION}"
-const val `kotlin-test-junit5` = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST_JUNIT5}:${Kotlin.VERSION}"
+val DependencyHandlerScope.`kotlin-reflect`: String
+    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.REFLECT}:${Kotlin.VERSION}"
+val DependencyHandlerScope.`kotlin-stdlib`: String
+    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB}:${Kotlin.VERSION}"
+val DependencyHandlerScope.`kotlin-stdlib-jdk8`: String
+    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB_JDK8}:${Kotlin.VERSION}"
+val DependencyHandlerScope.`kotlin-test`: String
+    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST}:${Kotlin.VERSION}"
+val DependencyHandlerScope.`kotlin-test-junit5`: String
+    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST_JUNIT5}:${Kotlin.VERSION}"
