@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.DependencyHandlerScope
+
 object AssertJ {
     const val GROUP = "org.assertj"
     const val VERSION = "3.11.1"
@@ -7,4 +9,5 @@ object AssertJ {
     }
 }
 
-const val `assertj-core` = "${AssertJ.GROUP}:${AssertJ.Dependencies.CORE}:${AssertJ.VERSION}"
+val DependencyHandlerScope.`assertj-core`: String
+    get() = "${AssertJ.GROUP}:${AssertJ.Dependencies.CORE}:${AssertJ.VERSION}"
