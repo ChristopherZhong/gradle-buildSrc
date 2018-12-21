@@ -1,6 +1,6 @@
 package org.apache.commons
 
-import org.apache.Apache
+import Apache
 
 object Commons {
     const val GROUP = "${Apache.GROUP}.commons"

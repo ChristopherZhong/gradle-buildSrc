@@ -1,6 +1,6 @@
 package org.apache.httpcomponents
 
-import org.apache.Apache
+import Apache
 
 object HttpComponents {
     const val GROUP = "${Apache.GROUP}.httpcomponents"
