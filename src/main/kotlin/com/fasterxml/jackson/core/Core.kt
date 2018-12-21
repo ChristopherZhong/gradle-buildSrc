@@ -1,6 +1,6 @@
 package com.fasterxml.jackson.core
 
-import com.fasterxml.jackson.Jackson
+import Jackson
 
 object Core {
     const val GROUP = "${Jackson.GROUP}.core"
