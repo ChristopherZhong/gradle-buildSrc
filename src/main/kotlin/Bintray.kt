@@ -7,6 +7,9 @@ object Bintray {
     const val VERSION = "1.8.4"
 }
 
+val PluginDependenciesSpec.bintray: PluginDependencySpec
+    get() = bintray()
+
 fun PluginDependenciesSpec.bintray(
     version: String = Bintray.VERSION,
     includeVersion: Boolean = true

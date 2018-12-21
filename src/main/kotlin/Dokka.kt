@@ -7,6 +7,9 @@ object Dokka {
     const val VERSION = "0.9.17"
 }
 
+val PluginDependenciesSpec.dokka: PluginDependencySpec
+    get() = dokka()
+
 fun PluginDependenciesSpec.dokka(
     version: String = Dokka.VERSION,
     includeVersion: Boolean = true
