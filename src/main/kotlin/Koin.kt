@@ -1,4 +1,4 @@
-import org.gradle.kotlin.dsl.DependencyHandlerScope
+import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object Koin {
     const val GROUP = "org.koin"
@@ -12,11 +12,11 @@ object Koin {
     }
 }
 
-val DependencyHandlerScope.`koin-core`: String
+val DependencyHandler.`koin-core`: String
     get() = "${Koin.GROUP}:${Koin.Dependencies.CORE}:${Koin.VERSION}"
-val DependencyHandlerScope.`koin-core-ext`: String
+val DependencyHandler.`koin-core-ext`: String
     get() = "${Koin.GROUP}:${Koin.Dependencies.CORE_EXT}:${Koin.VERSION}"
-val DependencyHandlerScope.`koin-java`: String
+val DependencyHandler.`koin-java`: String
     get() = "${Koin.GROUP}:${Koin.Dependencies.JAVA}:${Koin.VERSION}"
-val DependencyHandlerScope.`koin-test`: String
+val DependencyHandler.`koin-test`: String
     get() = "${Koin.GROUP}:${Koin.Dependencies.TEST}:${Koin.VERSION}"

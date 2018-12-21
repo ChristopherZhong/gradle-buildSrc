@@ -1,4 +1,4 @@
-import org.gradle.kotlin.dsl.DependencyHandlerScope
+import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
@@ -43,13 +43,13 @@ fun PluginDependenciesSpec.`kotlin-kapt`(
     return if (includeVersion) id version version else id
 }
 
-val DependencyHandlerScope.`kotlin-reflect`: String
+val DependencyHandler.`kotlin-reflect`: String
     get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.REFLECT}:${Kotlin.VERSION}"
-val DependencyHandlerScope.`kotlin-stdlib`: String
+val DependencyHandler.`kotlin-stdlib`: String
     get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB}:${Kotlin.VERSION}"
-val DependencyHandlerScope.`kotlin-stdlib-jdk8`: String
+val DependencyHandler.`kotlin-stdlib-jdk8`: String
     get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB_JDK8}:${Kotlin.VERSION}"
-val DependencyHandlerScope.`kotlin-test`: String
+val DependencyHandler.`kotlin-test`: String
     get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST}:${Kotlin.VERSION}"
-val DependencyHandlerScope.`kotlin-test-junit5`: String
+val DependencyHandler.`kotlin-test-junit5`: String
     get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST_JUNIT5}:${Kotlin.VERSION}"

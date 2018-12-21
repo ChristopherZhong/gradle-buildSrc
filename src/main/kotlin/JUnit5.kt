@@ -1,4 +1,4 @@
-import org.gradle.kotlin.dsl.DependencyHandlerScope
+import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object JUnit5 {
     const val GROUP = "org.junit"
@@ -9,7 +9,7 @@ object JUnit5 {
     }
 }
 
-val DependencyHandlerScope.`junit-bom`: String
+val DependencyHandler.`junit-bom`: String
     get() = "${JUnit5.GROUP}:${JUnit5.Dependencies.BOM}:${JUnit5.VERSION}"
 
 object JUnit5_Jupiter {
@@ -22,11 +22,11 @@ object JUnit5_Jupiter {
     }
 }
 
-val DependencyHandlerScope.`junit-jupiter-api`: String
+val DependencyHandler.`junit-jupiter-api`: String
     get() = "${JUnit5_Jupiter.GROUP}:${JUnit5_Jupiter.Dependencies.API}:${JUnit5.VERSION}"
-val DependencyHandlerScope.`junit-jupiter-engine`: String
+val DependencyHandler.`junit-jupiter-engine`: String
     get() = "${JUnit5_Jupiter.GROUP}:${JUnit5_Jupiter.Dependencies.ENGINE}:${JUnit5.VERSION}"
-val DependencyHandlerScope.`junit-jupiter-params`: String
+val DependencyHandler.`junit-jupiter-params`: String
     get() = "${JUnit5_Jupiter.GROUP}:${JUnit5_Jupiter.Dependencies.PARAMS}:${JUnit5.VERSION}"
 
 object JUnit5_Vintage {
@@ -37,5 +37,5 @@ object JUnit5_Vintage {
     }
 }
 
-val DependencyHandlerScope.`junit-vintage-engine`: String
+val DependencyHandler.`junit-vintage-engine`: String
     get() = "${JUnit5_Vintage.GROUP}:${JUnit5_Vintage.Dependencies.ENGINE}:${JUnit5.VERSION}"

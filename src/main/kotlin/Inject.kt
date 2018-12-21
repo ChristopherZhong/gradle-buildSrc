@@ -1,3 +1,5 @@
+import org.gradle.api.artifacts.dsl.DependencyHandler
+
 object Inject {
     const val GROUP = "javax.inject"
     const val VERSION = "1"
@@ -7,4 +9,5 @@ object Inject {
     }
 }
 
-const val `javax_inject` = "${Inject.GROUP}:${Inject.Dependencies.INJECT}:${Inject.VERSION}"
+val DependencyHandler.`javax_inject`: String
+    get() = "${Inject.GROUP}:${Inject.Dependencies.INJECT}:${Inject.VERSION}"
