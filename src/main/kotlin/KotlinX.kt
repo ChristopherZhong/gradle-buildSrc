@@ -2,7 +2,7 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object KotlinX {
     const val GROUP = "org.jetbrains.kotlinx"
-    const val VERSION = "1.0.1"
+    const val VERSION = "1.1.0"
 
     internal object Dependencies {
         const val COROUTINES_CORE = "kotlinx-coroutines-core"
