@@ -1,10 +1,14 @@
 import org.gradle.api.Project
 import org.gradle.api.artifacts.*
+import org.gradle.api.tasks.wrapper.Wrapper
 import org.gradle.kotlin.dsl.TaskContainerScope
 
 object Gradle {
     const val VERSION = "5.0"
 }
+
+val Wrapper.GRADLE_VERSION
+    get() = Gradle.VERSION
 
 fun TaskContainerScope.projectInfo() = register("projectInfo") {
     doLast {
