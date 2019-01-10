@@ -1,8 +1,10 @@
 import org.gradle.api.DefaultTask
+import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.*
 import org.gradle.api.tasks.TaskAction
 import org.gradle.api.tasks.wrapper.Wrapper
+import org.gradle.kotlin.dsl.register
 
 object Gradle {
     const val VERSION = "5.1"
@@ -11,7 +13,7 @@ object Gradle {
 val Wrapper.GRADLE_VERSION
     get() = Gradle.VERSION
 
-class ProjectInfo : DefaultTask() {
+class ProjectInfoTask : DefaultTask() {
     @TaskAction
     fun projectInfo() {
         doLast {
@@ -62,5 +64,16 @@ class ProjectInfo : DefaultTask() {
 
     private fun PublishArtifact.info(level: Int = 1) {
         println("- Artifact: name=$name, classifier=$classifier, extension=$extension, type=$type, file=$file, date=$date".prependIndent(" ".repeat((level - 1) * 2)))
+    }
+}
+
+class ProjectInfoPlugin : Plugin<Project> {
+    override fun apply(target: Project) {
+        target.tasks.register<ProjectInfoTask>("projectInfo")
+    }
+}
+
+class GradleTypedPluginsAndDependenciesPlugin : Plugin<Project> {
+    override fun apply(target: Project) {
     }
 }
