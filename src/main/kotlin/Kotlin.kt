@@ -22,26 +22,24 @@ object Kotlin {
 }
 
 val PluginDependenciesSpec.`kotlin-jvm`: PluginDependencySpec
-    get() = `kotlin-jvm`()
+    get() = `kotlin-jvm`(Kotlin.VERSION)
 
-fun PluginDependenciesSpec.`kotlin-jvm`(
-    version: String = Kotlin.VERSION,
-    includeVersion: Boolean = true
-): PluginDependencySpec {
-    val id = id(Kotlin.Plugins.JVM)
-    return if (includeVersion) id version version else id
-}
+fun PluginDependenciesSpec.`kotlin-jvm`(version: String? = null): PluginDependencySpec =
+        id(Kotlin.Plugins.JVM).apply {
+            if (version != null) {
+                return this version version
+            }
+        }
 
 val PluginDependenciesSpec.`kotlin-kapt`: PluginDependencySpec
-    get() = `kotlin-kapt`()
+    get() = `kotlin-kapt`(Kotlin.VERSION)
 
-fun PluginDependenciesSpec.`kotlin-kapt`(
-    version: String = Kotlin.VERSION,
-    includeVersion: Boolean = true
-): PluginDependencySpec {
-    val id = id(Kotlin.Plugins.KAPT)
-    return if (includeVersion) id version version else id
-}
+fun PluginDependenciesSpec.`kotlin-kapt`(version: String? = null): PluginDependencySpec =
+        id(Kotlin.Plugins.KAPT).apply {
+            if (version != null) {
+                this version version
+            }
+        }
 
 val DependencyHandler.`kotlin-reflect`: String
     get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.REFLECT}:${Kotlin.VERSION}"
