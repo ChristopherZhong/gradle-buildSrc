@@ -7,7 +7,7 @@ object SpringBoot {
     const val GROUP = "org.springframework.boot"
     const val VERSION = "2.1.1.RELEASE"
 
-    internal object Dependencies {
+    object Dependencies {
         const val NAME = "spring-boot"
         const val ACTUATOR = "$NAME-actuator"
         const val AUTOCONFIGURE = "$NAME-autoconfigure"
@@ -17,15 +17,14 @@ object SpringBoot {
 }
 
 val PluginDependenciesSpec.`spring-boot`: PluginDependencySpec
-    get() = `spring-boot`()
+    get() = `spring-boot`(SpringBoot.VERSION)
 
-fun PluginDependenciesSpec.`spring-boot`(
-    version: String = SpringBoot.VERSION,
-    includeVersion: Boolean = true
-): PluginDependencySpec {
-    val id = id(SpringBoot.GROUP)
-    return if (includeVersion) id version version else id
-}
+fun PluginDependenciesSpec.`spring-boot`(version: String? = null): PluginDependencySpec =
+        id(SpringBoot.GROUP).apply {
+            if (version != null) {
+                return this version version
+            }
+        }
 
 val DependencyHandler.`spring-boot`: String
     get() = "${SpringBoot.GROUP}:${SpringBoot.Dependencies.NAME}:${SpringBoot.VERSION}"
@@ -39,8 +38,7 @@ val DependencyHandler.`spring-boot-devtools`: String
     get() = "${SpringBoot.GROUP}:${SpringBoot.Dependencies.DEVTOOLS}:${SpringBoot.VERSION}"
 
 object SpringBootStarter {
-
-    internal object Dependencies {
+    object Dependencies {
         const val NAME = "${SpringBoot.Dependencies.NAME}-starter"
         const val ACTIVEMQ = "$NAME-activemq"
         const val AOP = "$NAME-aop"
@@ -85,8 +83,7 @@ val DependencyHandler.`spring-boot-starter-websocket`: String
     get() = "${SpringBoot.GROUP}:${SpringBootStarter.Dependencies.WEBSOCKET}:${SpringBoot.VERSION}"
 
 object SpringBootStarterData {
-
-    internal object Dependencies {
+    object Dependencies {
         const val NAME = "${SpringBootStarter.Dependencies.NAME}-data"
         const val JPA = "$NAME-jpa"
         const val MONGODB = "$NAME-mongodb"
