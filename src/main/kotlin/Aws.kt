@@ -1,3 +1,5 @@
+import org.gradle.api.artifacts.dsl.DependencyHandler
+
 object Aws {
     const val GROUP = "com.amazonaws"
 }
@@ -13,10 +15,14 @@ object AwsJava {
     }
 }
 
-const val `aws-java-sdk-bom`: String = "${Aws.GROUP}:${AwsJava.Dependencies.BOM}:${AwsJava.VERSION}"
-const val `aws-java-sdk-dynamodb`: String = "${Aws.GROUP}:${AwsJava.Dependencies.DYNAMODB}"
-const val `aws-java-sdk-ecs`: String = "${Aws.GROUP}:${AwsJava.Dependencies.ECS}"
-const val `aws-java-sdk-s3`: String = "${Aws.GROUP}:${AwsJava.Dependencies.S3}"
+val DependencyHandler.`aws-java-sdk-bom`: String
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.BOM}:${AwsJava.VERSION}"
+val DependencyHandler.`aws-java-sdk-dynamodb`: String
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.DYNAMODB}"
+val DependencyHandler.`aws-java-sdk-ecs`: String
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.ECS}"
+val DependencyHandler.`aws-java-sdk-s3`: String
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.S3}"
 
 object AwsLambda {
     object Dependencies {
@@ -26,6 +32,9 @@ object AwsLambda {
     }
 }
 
-const val `aws-lambda-java-core`: String = "${Aws.GROUP}:${AwsLambda.Dependencies.CORE}"
-const val `aws-lambda-java-events`: String = "${Aws.GROUP}:${AwsLambda.Dependencies.EVENTS}"
-const val `aws-lambda-java-log4j2`: String = "${Aws.GROUP}:${AwsLambda.Dependencies.LOG4J2}"
+val DependencyHandler.`aws-lambda-java-core`: String
+    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.CORE}"
+val DependencyHandler.`aws-lambda-java-events`: String
+    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.EVENTS}"
+val DependencyHandler.`aws-lambda-java-log4j2`: String
+    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.LOG4J2}"
