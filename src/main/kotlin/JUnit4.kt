@@ -4,7 +4,7 @@ object JUnit4 {
     const val GROUP = "junit"
     const val VERSION = "4.12"
 
-    internal object Dependencies {
+    object Dependencies {
         const val JUNIT = "junit"
     }
 }
