@@ -1,6 +1,6 @@
 package com.google.inject.extensions
 
-import com.google.inject.Guice
+import Guice
 
 object Extensions {
     const val GROUP = "${Guice.GROUP}.extensions"
