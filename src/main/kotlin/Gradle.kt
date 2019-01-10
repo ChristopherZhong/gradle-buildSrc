@@ -4,7 +4,7 @@ import org.gradle.api.tasks.wrapper.Wrapper
 import org.gradle.kotlin.dsl.TaskContainerScope
 
 object Gradle {
-    const val VERSION = "5.0"
+    const val VERSION = "5.1"
 }
 
 val Wrapper.GRADLE_VERSION
