@@ -13,12 +13,10 @@ object Gradle {
 val Wrapper.GRADLE_VERSION
     get() = Gradle.VERSION
 
-class ProjectInfoTask : DefaultTask() {
+open class ProjectInfoTask : DefaultTask() {
     @TaskAction
     fun projectInfo() {
-        doLast {
-            project.info()
-        }
+        project.info()
     }
 
     private fun Project.info(level: Int = 1) {

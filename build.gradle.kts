@@ -8,6 +8,10 @@ repositories {
 
 gradlePlugin {
     plugins {
+        register("project-info") {
+            id = "project-info"
+            implementationClass = "ProjectInfoPlugin"
+        }
         register("gradle-typed-plugins-and-dependencies") {
             id = "gradle-typed-plugins-and-dependencies"
             implementationClass = "GradleTypedPluginsAndDependenciesPlugin"
