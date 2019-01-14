@@ -21,5 +21,5 @@ gradlePlugin {
 
 tasks.wrapper {
     distributionType = Wrapper.DistributionType.ALL
-    gradleVersion = "5.1"
+    gradleVersion = "5.1.1"
 }

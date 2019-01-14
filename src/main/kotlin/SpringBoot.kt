@@ -5,7 +5,7 @@ import org.gradle.plugin.use.PluginDependencySpec
 
 object SpringBoot {
     const val GROUP = "org.springframework.boot"
-    const val VERSION = "2.1.1.RELEASE"
+    const val VERSION = "2.1.2.RELEASE"
 
     object Dependencies {
         const val NAME = "spring-boot"
