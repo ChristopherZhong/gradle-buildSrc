@@ -19,6 +19,7 @@ gradle-app.setting
 *.iws
 # IntelliJ
 out/
+*.iml
 
 ### VS Code template
 .vscode/
