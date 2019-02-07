@@ -5,7 +5,7 @@ import org.gradle.plugin.use.PluginDependencySpec
 
 object Kotlin {
     const val GROUP = "org.jetbrains.kotlin"
-    const val VERSION = "1.3.11"
+    const val VERSION = "1.3.21"
 
     internal object Plugins {
         const val JVM = "$GROUP.jvm"
