@@ -4,7 +4,7 @@ object JUnit5 {
     const val GROUP = "org.junit"
     const val VERSION = "5.4.0"
 
-    internal object Dependencies {
+    internal object Dependency {
         const val BOM = "junit-bom"
     }
 }
