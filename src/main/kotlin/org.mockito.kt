@@ -2,7 +2,7 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object Mockito {
     const val GROUP = "org.mockito"
-    const val VERSION = "2.24.0"
+    const val VERSION = "2.24.5"
 
     internal object Dependency {
         const val CORE = "mockito-core"
