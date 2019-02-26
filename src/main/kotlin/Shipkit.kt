@@ -4,7 +4,7 @@ import org.gradle.plugin.use.PluginDependencySpec
 
 object Shipkit {
     const val ID = "org.shipkit.java"
-    const val VERSION = "2.0.32"
+    const val VERSION = "2.1.3"
 }
 
 val PluginDependenciesSpec.`shipkit-java`: PluginDependencySpec
