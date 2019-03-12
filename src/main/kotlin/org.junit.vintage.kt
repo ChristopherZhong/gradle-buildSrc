@@ -1,3 +1,5 @@
+@file:Suppress("unused", "ObjectPropertyName")
+
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object JUnit5Vintage {
