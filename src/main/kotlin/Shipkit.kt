@@ -11,8 +11,8 @@ val PluginDependenciesSpec.`shipkit-java`: PluginDependencySpec
     get() = `shipkit-java`(Shipkit.VERSION)
 
 fun PluginDependenciesSpec.`shipkit-java`(version: String? = null): PluginDependencySpec =
-    id(Shipkit.ID).apply {
-        if (version != null) {
-            return this version version
+        id(Shipkit.ID).apply {
+            if (version != null) {
+                return this version version
+            }
         }
-    }

@@ -11,8 +11,8 @@ val PluginDependenciesSpec.detekt: PluginDependencySpec
     get() = detekt()
 
 fun PluginDependenciesSpec.detekt(
-    version: String = Detekt.VERSION,
-    includeVersion: Boolean = true
+        version: String = Detekt.VERSION,
+        includeVersion: Boolean = true
 ): PluginDependencySpec {
     val id = id(Detekt.GROUP)
     return if (includeVersion) id version version else id

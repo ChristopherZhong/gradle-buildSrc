@@ -11,8 +11,8 @@ val PluginDependenciesSpec.bintray: PluginDependencySpec
     get() = bintray()
 
 fun PluginDependenciesSpec.bintray(
-    version: String = Bintray.VERSION,
-    includeVersion: Boolean = true
+        version: String = Bintray.VERSION,
+        includeVersion: Boolean = true
 ): PluginDependencySpec {
     val id = id(Bintray.GROUP)
     return if (includeVersion) id version version else id

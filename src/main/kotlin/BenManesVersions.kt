@@ -15,8 +15,8 @@ val PluginDependenciesSpec.`gradle-versions-plugin`: PluginDependencySpec
     get() = `gradle-versions-plugin`()
 
 fun PluginDependenciesSpec.`gradle-versions-plugin`(
-    version: String = BenManesVersions.VERSION,
-    includeVersion: Boolean = true
+        version: String = BenManesVersions.VERSION,
+        includeVersion: Boolean = true
 ): PluginDependencySpec {
     val id = id(BenManesVersions.GROUP)
     return if (includeVersion) id version version else id

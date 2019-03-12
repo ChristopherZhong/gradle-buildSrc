@@ -11,8 +11,8 @@ val PluginDependenciesSpec.dokka: PluginDependencySpec
     get() = dokka()
 
 fun PluginDependenciesSpec.dokka(
-    version: String = Dokka.VERSION,
-    includeVersion: Boolean = true
+        version: String = Dokka.VERSION,
+        includeVersion: Boolean = true
 ): PluginDependencySpec {
     val id = id(Dokka.GROUP)
     return if (includeVersion) id version version else id
