@@ -9,33 +9,27 @@ object AwsJava {
 
     internal object Dependencies {
         const val SDK = "aws-java-sdk"
-        const val BOM = "$SDK-bom"
-        const val DYNAMODB = "$SDK-dynamodb"
-        const val ECS = "$SDK-ecs"
-        const val S3 = "$SDK-s3"
     }
 }
 
 val DependencyHandler.`aws-java-sdk-bom`: String
-    get() = "${Aws.GROUP}:${AwsJava.Dependencies.BOM}:${AwsJava.VERSION}"
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.SDK}-bom:${AwsJava.VERSION}"
 val DependencyHandler.`aws-java-sdk-dynamodb`: String
-    get() = "${Aws.GROUP}:${AwsJava.Dependencies.DYNAMODB}"
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.SDK}-dynamodb:${AwsJava.VERSION}"
 val DependencyHandler.`aws-java-sdk-ecs`: String
-    get() = "${Aws.GROUP}:${AwsJava.Dependencies.ECS}"
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.SDK}-ecs:${AwsJava.VERSION}"
 val DependencyHandler.`aws-java-sdk-s3`: String
-    get() = "${Aws.GROUP}:${AwsJava.Dependencies.S3}"
+    get() = "${Aws.GROUP}:${AwsJava.Dependencies.SDK}-s3:${AwsJava.VERSION}"
 
 object AwsLambda {
-    object Dependencies {
-        const val CORE = "aws-lambda-java-core:1.2.0"
-        const val EVENTS = "aws-lambda-java-events:2.2.2"
-        const val LOG4J2 = "aws-lambda-java-log4j2:1.1.0"
+    internal object Dependencies {
+        const val JAVA = "aws-lambda-java"
     }
 }
 
 val DependencyHandler.`aws-lambda-java-core`: String
-    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.CORE}"
+    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.JAVA}-core:1.2.0"
 val DependencyHandler.`aws-lambda-java-events`: String
-    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.EVENTS}"
+    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.JAVA}-events:2.2.2"
 val DependencyHandler.`aws-lambda-java-log4j2`: String
-    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.LOG4J2}"
+    get() = "${Aws.GROUP}:${AwsLambda.Dependencies.JAVA}-log4j2:1.1.0"
