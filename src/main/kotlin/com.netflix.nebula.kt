@@ -1,3 +1,5 @@
+@file:Suppress("unused", "ObjectPropertyName", "FunctionName")
+
 import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
