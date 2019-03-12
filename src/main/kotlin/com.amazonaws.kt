@@ -7,11 +7,12 @@ object Aws {
 object AwsJava {
     const val VERSION = "1.11.414"
 
-    object Dependencies {
-        const val BOM = "aws-java-sdk-bom"
-        const val DYNAMODB = "aws-java-sdk-dynamodb"
-        const val ECS = "aws-java-sdk-ecs"
-        const val S3 = "aws-java-sdk-s3"
+    internal object Dependencies {
+        const val SDK = "aws-java-sdk"
+        const val BOM = "$SDK-bom"
+        const val DYNAMODB = "$SDK-dynamodb"
+        const val ECS = "$SDK-ecs"
+        const val S3 = "$SDK-s3"
     }
 }
 
