@@ -1,3 +1,5 @@
+@file:Suppress("unused", "ObjectPropertyName")
+
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object KotlinX {
@@ -5,18 +7,15 @@ object KotlinX {
     const val VERSION = "1.1.1"
 
     internal object Dependencies {
-        const val COROUTINES_CORE = "kotlinx-coroutines-core"
-        const val COROUTINES_CORE_COMMON = "kotlinx-coroutines-core-common"
-        const val COROUTINES_JAVAFX = "kotlinx-coroutines-javafx"
-        const val COROUTINES_JDK8 = "kotlinx-coroutines-jdk8"
+        const val COROUTINES = "kotlinx-coroutines"
     }
 }
 
 val DependencyHandler.`kotlinx-coroutines-core`: String
-    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES_CORE}:${KotlinX.VERSION}"
+    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES}-core:${KotlinX.VERSION}"
 val DependencyHandler.`kotlinx-coroutines-core-common`: String
-    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES_CORE_COMMON}:${KotlinX.VERSION}"
+    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES}-core-common:${KotlinX.VERSION}"
 val DependencyHandler.`kotlinx-coroutines-javafx`: String
-    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES_JAVAFX}:${KotlinX.VERSION}"
+    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES}-javafx:${KotlinX.VERSION}"
 val DependencyHandler.`kotlinx-coroutines-jdk8`: String
-    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES_JDK8}:${KotlinX.VERSION}"
+    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES}-jdk8:${KotlinX.VERSION}"
