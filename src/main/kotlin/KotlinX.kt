@@ -8,13 +8,14 @@ object KotlinX {
 
     internal object Dependencies {
         const val COROUTINES = "kotlinx-coroutines"
+        const val CORE = "${KotlinX.Dependencies.COROUTINES}-core"
     }
 }
 
 val DependencyHandler.`kotlinx-coroutines-core`: String
-    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES}-core:${KotlinX.VERSION}"
+    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.CORE}:${KotlinX.VERSION}"
 val DependencyHandler.`kotlinx-coroutines-core-common`: String
-    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES}-core-common:${KotlinX.VERSION}"
+    get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.CORE}-common:${KotlinX.VERSION}"
 val DependencyHandler.`kotlinx-coroutines-javafx`: String
     get() = "${KotlinX.GROUP}:${KotlinX.Dependencies.COROUTINES}-javafx:${KotlinX.VERSION}"
 val DependencyHandler.`kotlinx-coroutines-jdk8`: String
