@@ -36,8 +36,9 @@ val DependencyHandler.`spring-boot-devtools`: String
     get() = "${SpringBoot.GROUP}:${SpringBoot.Dependency.NAME}-devtools:${SpringBoot.VERSION}"
 
 object SpringBootStarter {
-    internal object Dependency {
+    object Dependency {
         const val NAME = "${SpringBoot.Dependency.NAME}-starter"
+        const val LOGGING = "${SpringBootStarter.Dependency.NAME}-logging"
     }
 }
 
@@ -54,7 +55,7 @@ val DependencyHandler.`spring-boot-starter-json`: String
 val DependencyHandler.`spring-boot-starter-log4j2`: String
     get() = "${SpringBoot.GROUP}:${SpringBootStarter.Dependency.NAME}-log4j2:${SpringBoot.VERSION}"
 val DependencyHandler.`spring-boot-starter-logging`: String
-    get() = "${SpringBoot.GROUP}:${SpringBootStarter.Dependency.NAME}-logging:${SpringBoot.VERSION}"
+    get() = "${SpringBoot.GROUP}:${SpringBootStarter.Dependency.LOGGING}:${SpringBoot.VERSION}"
 val DependencyHandler.`spring-boot-starter-mail`: String
     get() = "${SpringBoot.GROUP}:${SpringBootStarter.Dependency.NAME}-mail:${SpringBoot.VERSION}"
 val DependencyHandler.`spring-boot-starter-parent`: String
