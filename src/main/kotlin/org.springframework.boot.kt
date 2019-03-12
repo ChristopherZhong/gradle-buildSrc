@@ -1,4 +1,4 @@
-@file:Suppress("unused", "ObjectPropertyName")
+@file:Suppress("unused", "ObjectPropertyName", "FunctionName")
 
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.kotlin.dsl.version
