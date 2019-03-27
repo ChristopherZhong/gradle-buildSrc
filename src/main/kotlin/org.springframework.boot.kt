@@ -1,7 +1,6 @@
 @file:Suppress("unused", "ObjectPropertyName", "FunctionName")
 
 import org.gradle.api.artifacts.dsl.DependencyHandler
-import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
@@ -18,11 +17,7 @@ val PluginDependenciesSpec.`spring-boot`: PluginDependencySpec
     get() = `spring-boot`(SpringBoot.VERSION)
 
 fun PluginDependenciesSpec.`spring-boot`(version: String? = null): PluginDependencySpec =
-        id(SpringBoot.GROUP).apply {
-            if (version != null) {
-                return this version version
-            }
-        }
+    id(SpringBoot.GROUP).applyVersion(version)
 
 val DependencyHandler.`spring-boot`: String
     get() = "${SpringBoot.GROUP}:${SpringBoot.Dependency.NAME}:${SpringBoot.VERSION}"
