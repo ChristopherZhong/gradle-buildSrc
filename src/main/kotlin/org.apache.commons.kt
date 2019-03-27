@@ -3,7 +3,7 @@
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object Commons {
-    const val GROUP = "${Apache.GROUP}.commons"
+    const val GROUP = "org.apache.commons"
 }
 
 val DependencyHandler.`commons-csv`: String

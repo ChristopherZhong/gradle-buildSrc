@@ -3,7 +3,7 @@
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object Log4j {
-    const val GROUP = "${Apache.GROUP}.logging.log4j"
+    const val GROUP = "org.apache.logging.log4j"
     const val VERSION = "2.11.2"
 }
 
