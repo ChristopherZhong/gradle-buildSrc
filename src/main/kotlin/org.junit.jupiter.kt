@@ -4,7 +4,6 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object JUnit5Jupiter {
     const val GROUP = "${JUnit5.GROUP}.jupiter"
-
     const val JUPITER = "${JUnit5.JUNIT}-jupiter"
 }
 
