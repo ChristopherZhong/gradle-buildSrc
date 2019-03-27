@@ -7,13 +7,14 @@ object Kotlin {
     const val VERSION = "1.3.21"
 
     internal object Dependencies {
-        const val STDLIB = "kotlin-stdlib"
-        const val TEST = "kotlin-test"
+        const val KOTLIN = "kotlin"
+        const val STDLIB = "$KOTLIN-stdlib"
+        const val TEST = "$KOTLIN-test"
     }
 }
 
 val DependencyHandler.`kotlin-reflect`: String
-    get() = "${Kotlin.GROUP}:kotlin-reflect:${Kotlin.VERSION}"
+    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.KOTLIN}-reflect:${Kotlin.VERSION}"
 val DependencyHandler.`kotlin-stdlib`: String
     get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB}:${Kotlin.VERSION}"
 val DependencyHandler.`kotlin-stdlib-jdk8`: String
