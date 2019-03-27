@@ -1,4 +1,3 @@
-import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
@@ -8,12 +7,7 @@ object Dokka {
 }
 
 val PluginDependenciesSpec.dokka: PluginDependencySpec
-    get() = dokka()
+    get() = dokka(Dokka.VERSION)
 
-fun PluginDependenciesSpec.dokka(
-        version: String = Dokka.VERSION,
-        includeVersion: Boolean = true
-): PluginDependencySpec {
-    val id = id(Dokka.GROUP)
-    return if (includeVersion) id version version else id
-}
+fun PluginDependenciesSpec.dokka(version: String? = null): PluginDependencySpec =
+    id(Dokka.GROUP).applyVersion(version)
