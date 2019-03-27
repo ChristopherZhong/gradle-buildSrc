@@ -5,9 +5,11 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 object Mockito {
     const val GROUP = "org.mockito"
     const val VERSION = "2.24.5"
+
+    const val MOCKITO = "mockito"
 }
 
 val DependencyHandler.`mockito-core`: String
-    get() = "${Mockito.GROUP}:mockito-core:${Mockito.VERSION}"
+    get() = "${Mockito.GROUP}:${Mockito.MOCKITO}-core:${Mockito.VERSION}"
 val DependencyHandler.`mockito-junit-jupiter`: String
-    get() = "${Mockito.GROUP}:mockito-junit-jupiter:${Mockito.VERSION}"
+    get() = "${Mockito.GROUP}:${Mockito.MOCKITO}-junit-jupiter:${Mockito.VERSION}"
