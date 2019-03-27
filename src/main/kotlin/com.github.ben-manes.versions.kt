@@ -6,7 +6,7 @@ import org.gradle.plugin.use.PluginDependencySpec
 
 object BenManesVersions {
     const val GROUP = "com.github.ben-manes.versions"
-    const val VERSION = "0.20.0"
+    const val VERSION = "0.21.0"
 }
 
 val PluginDependenciesSpec.`gradle-versions-plugin`: PluginDependencySpec
