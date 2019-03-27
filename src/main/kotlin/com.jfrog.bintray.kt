@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
