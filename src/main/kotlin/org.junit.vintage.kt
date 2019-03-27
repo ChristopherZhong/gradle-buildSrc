@@ -7,4 +7,4 @@ object JUnit5Vintage {
 }
 
 val DependencyHandler.`junit-vintage-engine`: String
-    get() = "${JUnit5Vintage.GROUP}:junit-vintage-engine:${JUnit5.VERSION}"
+    get() = "${JUnit5Vintage.GROUP}:${JUnit5.JUNIT}-vintage-engine:${JUnit5.VERSION}"
