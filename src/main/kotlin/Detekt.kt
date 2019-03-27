@@ -1,4 +1,3 @@
-import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
@@ -8,12 +7,7 @@ object Detekt {
 }
 
 val PluginDependenciesSpec.detekt: PluginDependencySpec
-    get() = detekt()
+    get() = detekt(Detekt.VERSION)
 
-fun PluginDependenciesSpec.detekt(
-        version: String = Detekt.VERSION,
-        includeVersion: Boolean = true
-): PluginDependencySpec {
-    val id = id(Detekt.GROUP)
-    return if (includeVersion) id version version else id
-}
+fun PluginDependenciesSpec.detekt(version: String? = null): PluginDependencySpec =
+    id(Detekt.GROUP).applyVersion(version)
