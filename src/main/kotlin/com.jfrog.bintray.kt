@@ -1,4 +1,3 @@
-import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
@@ -8,12 +7,7 @@ object Bintray {
 }
 
 val PluginDependenciesSpec.bintray: PluginDependencySpec
-    get() = bintray()
+    get() = bintray(Bintray.VERSION)
 
-fun PluginDependenciesSpec.bintray(
-        version: String = Bintray.VERSION,
-        includeVersion: Boolean = true
-): PluginDependencySpec {
-    val id = id(Bintray.GROUP)
-    return if (includeVersion) id version version else id
-}
+fun PluginDependenciesSpec.bintray(version: String? = null): PluginDependencySpec =
+    id(Bintray.GROUP).applyVersion(version)
