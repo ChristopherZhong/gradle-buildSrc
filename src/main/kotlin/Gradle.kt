@@ -9,7 +9,7 @@ import org.gradle.api.tasks.wrapper.Wrapper
 import org.gradle.kotlin.dsl.register
 
 object Gradle {
-    const val VERSION = "5.3"
+    const val VERSION = "5.5"
 }
 
 val Wrapper.GRADLE_VERSION
