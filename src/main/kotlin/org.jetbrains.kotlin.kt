@@ -4,7 +4,7 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object Kotlin {
     const val GROUP = "org.jetbrains.kotlin"
-    const val VERSION = "1.3.21"
+    const val VERSION = "1.3.41"
 
     internal object Dependencies {
         const val KOTLIN = "kotlin"
