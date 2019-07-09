@@ -4,7 +4,7 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object JUnit5 {
     const val GROUP = "org.junit"
-    const val VERSION = "5.4.0"
+    const val VERSION = "5.5.0"
     const val JUNIT = "junit"
 }
 
