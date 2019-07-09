@@ -4,7 +4,7 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object Mockito {
     const val GROUP = "org.mockito"
-    const val VERSION = "2.25.1"
+    const val VERSION = "3.0.0"
     const val MOCKITO = "mockito"
 }
 
