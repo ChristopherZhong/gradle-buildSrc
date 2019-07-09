@@ -60,6 +60,8 @@ val DependencyHandler.`spring-boot-starter-test`: String
     get() = "${SpringBoot.GROUP}:$STARTER-test:${SpringBoot.VERSION}"
 val DependencyHandler.`spring-boot-starter-web`: String
     get() = "${SpringBoot.GROUP}:$STARTER-web:${SpringBoot.VERSION}"
+val DependencyHandler.`spring-boot-starter-webflux`: String
+    get() = "${SpringBoot.GROUP}:$STARTER-webflux:${SpringBoot.VERSION}"
 val DependencyHandler.`spring-boot-starter-websocket`: String
     get() = "${SpringBoot.GROUP}:$STARTER-websocket:${SpringBoot.VERSION}"
 
