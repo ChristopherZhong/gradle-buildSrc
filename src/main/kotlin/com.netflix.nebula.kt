@@ -9,7 +9,7 @@ object Nebula {
 }
 
 object NebulaKotlin {
-    const val VERSION = "1.3.21"
+    const val VERSION = "1.3.41"
 }
 
 val PluginDependenciesSpec.`nebula-kotlin`: PluginDependencySpec
