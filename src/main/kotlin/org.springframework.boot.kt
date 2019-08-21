@@ -9,7 +9,7 @@ import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
 object SpringBoot {
-    const val GROUP = "org.springframework.boot"
+    const val GROUP = "${SpringFramework.GROUP}.boot"
     const val VERSION = "2.1.6.RELEASE"
     const val BOOT = "spring-boot"
 }
