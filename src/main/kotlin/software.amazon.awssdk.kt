@@ -4,7 +4,7 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object AwsSdk {
     const val GROUP = "software.amazon.awssdk"
-    const val VERSION = "2.7.1"
+    const val VERSION = "2.7.28"
 }
 
 val DependencyHandler.`awssdk-bom`: String
