@@ -1,4 +1,4 @@
-@file:Suppress("ObjectPropertyName", "FunctionName")
+@file:Suppress("ObjectPropertyName", "FunctionName", "unused")
 
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
