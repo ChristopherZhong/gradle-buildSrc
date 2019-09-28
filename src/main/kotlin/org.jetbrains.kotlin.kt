@@ -3,8 +3,6 @@
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object Kotlin {
-    const val GROUP = "org.jetbrains.kotlin"
-    const val VERSION = "1.3.41"
 
     internal object Dependencies {
         const val KOTLIN = "kotlin"
@@ -14,12 +12,12 @@ object Kotlin {
 }
 
 val DependencyHandler.`kotlin-reflect`: String
-    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.KOTLIN}-reflect:${Kotlin.VERSION}"
+    get() = "org.jetbrains.kotlin:${Kotlin.Dependencies.KOTLIN}-reflect:1.3.41"
 val DependencyHandler.`kotlin-stdlib`: String
-    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB}:${Kotlin.VERSION}"
+    get() = "org.jetbrains.kotlin:${Kotlin.Dependencies.STDLIB}:1.3.41"
 val DependencyHandler.`kotlin-stdlib-jdk8`: String
-    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.STDLIB}-jdk8:${Kotlin.VERSION}"
+    get() = "org.jetbrains.kotlin:${Kotlin.Dependencies.STDLIB}-jdk8:1.3.41"
 val DependencyHandler.`kotlin-test`: String
-    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST}:${Kotlin.VERSION}"
+    get() = "org.jetbrains.kotlin:${Kotlin.Dependencies.TEST}:1.3.41"
 val DependencyHandler.`kotlin-test-junit5`: String
-    get() = "${Kotlin.GROUP}:${Kotlin.Dependencies.TEST}-junit5:${Kotlin.VERSION}"
+    get() = "org.jetbrains.kotlin:${Kotlin.Dependencies.TEST}-junit5:1.3.41"
