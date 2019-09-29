@@ -3,6 +3,7 @@
 import Versions.ASSERTJ
 import Versions.AWSSDK
 import Versions.AWS_JAVA_SDK
+import Versions.BEN_MANES
 import Versions.COMMONS_CSV
 import Versions.COMMONS_NET
 import Versions.DAGGER
@@ -52,7 +53,7 @@ fun DependencyHandler.dagger() = "$dagger:$DAGGER"
 val DependencyHandler.`dagger-compiler` get() = "com.google.dagger:dagger-compiler"
 fun DependencyHandler.`dagger-compiler`() = "$`dagger-compiler`:$DAGGER"
 val DependencyHandler.`gradle-versions-plugin` get() = "com.github.ben-manes.versions:gradle-versions-plugin"
-fun DependencyHandler.`gradle-versions-plugin`() = "$`gradle-versions-plugin`:0.22.0"
+fun DependencyHandler.`gradle-versions-plugin`() = "$`gradle-versions-plugin`:$BEN_MANES"
 val DependencyHandler.`graphiql-spring-boot-starter` get() = "com.graphql-java:graphiql-spring-boot-starter"
 fun DependencyHandler.`graphiql-spring-boot-starter`() = "$`graphiql-spring-boot-starter`:5.0.2"
 val DependencyHandler.`graphql-java` get() = "com.graphql-java:graphql-java"
