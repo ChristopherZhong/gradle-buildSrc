@@ -2,9 +2,9 @@
 
 import org.gradle.plugin.use.PluginDependenciesSpec
 
-val PluginDependenciesSpec.bintray get() = id("com.jfrog.getBintray")
+val PluginDependenciesSpec.bintray get() = id("com.jfrog.bintray")
 fun PluginDependenciesSpec.bintray() = bintray.version("1.8.4")
-val PluginDependenciesSpec.detekt get() = id("io.gitlab.arturbosch.getDetekt")
+val PluginDependenciesSpec.detekt get() = id("io.gitlab.arturbosch.detekt")
 fun PluginDependenciesSpec.detekt() = detekt.version("1.0.0-RC12")
 val PluginDependenciesSpec.dokka get() = id("org.jetbrains.dokka")
 fun PluginDependenciesSpec.dokka() = dokka.version("0.9.18")
