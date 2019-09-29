@@ -17,6 +17,7 @@ import Versions.KOTLINX
 import Versions.LOG4J
 import Versions.LOG4J_KOTLIN
 import Versions.MOCKITO
+import Versions.MOCK_FTP_SERVER
 import Versions.SPRING
 import Versions.SPRING_BOOT
 import Versions.TRUTH
@@ -153,7 +154,7 @@ fun DependencyHandler.lombok() = "$lombok:1.18.4"
 val DependencyHandler.mockk get() = "io.mockk:mockk"
 fun DependencyHandler.mockk() = "$mockk:1.9.3"
 val DependencyHandler.`mock-ftp-server` get() = "org.mockftpserver:MockFtpServer"
-fun DependencyHandler.`mock-ftp-server`() = "$`mock-ftp-server`:2.7.1"
+fun DependencyHandler.`mock-ftp-server`() = "$`mock-ftp-server`:$MOCK_FTP_SERVER"
 val DependencyHandler.`mockito-core` get() = "org.mockito:mockito-core"
 fun DependencyHandler.`mockito-core`() = "$`mockito-core`:$MOCKITO"
 val DependencyHandler.`mockito-junit-jupiter` get() = "org.mockito:mockito-junit-jupiter"

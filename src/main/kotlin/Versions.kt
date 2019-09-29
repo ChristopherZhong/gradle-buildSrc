@@ -23,6 +23,7 @@ internal object Versions {
     const val LOG4J = "2.11.2"
     const val LOG4J_KOTLIN = "1.0.0"
     const val MOCKITO = "3.0.0"
+    const val MOCK_FTP_SERVER = "2.7.1"
     const val SHIPKIT = "2.2.5"
     const val SPRING = "5.1.9.RELEASE"
     const val SPRING_BOOT = "2.1.8.RELEASE"
