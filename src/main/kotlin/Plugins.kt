@@ -1,5 +1,7 @@
-@file:Suppress("ObjectPropertyName", "FunctionName", "unused")
+@file:Suppress("ObjectPropertyName", "FunctionName", "unused", "SpellCheckingInspection")
 
+import Versions.KOTLIN
+import Versions.SPRING_BOOT
 import org.gradle.plugin.use.PluginDependenciesSpec
 
 val PluginDependenciesSpec.bintray get() = id("com.jfrog.bintray")
@@ -11,11 +13,11 @@ fun PluginDependenciesSpec.dokka() = dokka.version("0.9.18")
 val PluginDependenciesSpec.`gradle-versions-plugin` get() = id("com.github.ben-manes.versions")
 fun PluginDependenciesSpec.`gradle-versions-plugin`() = `gradle-versions-plugin`.version("0.22.0")
 val PluginDependenciesSpec.`kotlin-jvm` get() = id("org.jetbrains.kotlin.jvm")
-fun PluginDependenciesSpec.`kotlin-jvm`() = `kotlin-jvm`.version("1.3.41")
+fun PluginDependenciesSpec.`kotlin-jvm`() = `kotlin-jvm`.version(KOTLIN)
 val PluginDependenciesSpec.`kotlin-kapt` get() = id("org.jetbrains.kotlin.kapt")
-fun PluginDependenciesSpec.`kotlin-kapt`() = `kotlin-kapt`.version("1.3.41")
+fun PluginDependenciesSpec.`kotlin-kapt`() = `kotlin-kapt`.version(KOTLIN)
 val PluginDependenciesSpec.`nebula-kotlin` get() = id("nebula.kotlin")
-fun PluginDependenciesSpec.`nebula-kotlin`() = `nebula-kotlin`.version("1.3.41")
+fun PluginDependenciesSpec.`nebula-kotlin`() = `nebula-kotlin`.version(KOTLIN)
 val PluginDependenciesSpec.`nebula-javadoc-jar` get() = id("nebula.javadoc-jar")
 fun PluginDependenciesSpec.`nebula-javadoc-jar`() = `nebula-javadoc-jar`.version("9.4.5")
 val PluginDependenciesSpec.`nebula-maven-publish` get() = id("nebula.maven-publish")
@@ -29,6 +31,6 @@ fun PluginDependenciesSpec.`nebula-source-jar`() = `nebula-source-jar`.version("
 val PluginDependenciesSpec.`shipkit-java` get() = id("org.shipkit.java")
 fun PluginDependenciesSpec.`shipkit-java`() = `shipkit-java`.version("2.2.5")
 val PluginDependenciesSpec.`spring-boot` get() = id("org.springframework.boot")
-fun PluginDependenciesSpec.`spring-boot`() = `spring-boot`.version("2.1.7.RELEASE")
+fun PluginDependenciesSpec.`spring-boot`() = `spring-boot`.version(SPRING_BOOT)
 val PluginDependenciesSpec.`spring-dependency-management` get() = id("io.spring.dependency-management")
 fun PluginDependenciesSpec.`spring-dependency-management`() = `spring-dependency-management`.version("1.0.6.RELEASE")
