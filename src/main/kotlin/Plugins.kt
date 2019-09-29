@@ -2,6 +2,7 @@
 
 import Versions.BEN_MANES
 import Versions.KOTLIN
+import Versions.SHIPKIT
 import Versions.SPRING_BOOT
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
@@ -31,7 +32,7 @@ fun PluginDependenciesSpec.`nebula-release`(): PluginDependencySpec = `nebula-re
 val PluginDependenciesSpec.`nebula-source-jar`: PluginDependencySpec get() = id("nebula.source-jar")
 fun PluginDependenciesSpec.`nebula-source-jar`(): PluginDependencySpec = `nebula-source-jar`.version("9.4.5")
 val PluginDependenciesSpec.`shipkit-java`: PluginDependencySpec get() = id("org.shipkit.java")
-fun PluginDependenciesSpec.`shipkit-java`(): PluginDependencySpec = `shipkit-java`.version("2.2.5")
+fun PluginDependenciesSpec.`shipkit-java`(): PluginDependencySpec = `shipkit-java`.version(SHIPKIT)
 val PluginDependenciesSpec.`spring-boot`: PluginDependencySpec get() = id("org.springframework.boot")
 fun PluginDependenciesSpec.`spring-boot`(): PluginDependencySpec = `spring-boot`.version(SPRING_BOOT)
 val PluginDependenciesSpec.`spring-dependency-management`: PluginDependencySpec get() = id("io.spring.dependency-management")
