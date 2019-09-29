@@ -3,6 +3,7 @@
 import Versions.ASSERTJ
 import Versions.AWSSDK
 import Versions.AWS_JAVA_SDK
+import Versions.COMMONS_CSV
 import Versions.DAGGER
 import Versions.GUICE
 import Versions.JACKSON
@@ -38,7 +39,7 @@ fun DependencyHandler.`aws-lambda-java-events`() = "$`aws-lambda-java-events`:2.
 val DependencyHandler.`aws-lambda-java-log4j2` get() = "com.amazonaws:aws-lambda-java-log4j2"
 fun DependencyHandler.`aws-lambda-java-log4j2`() = "$`aws-lambda-java-log4j2`:1.1.0"
 val DependencyHandler.`commons-csv` get() = "org.apache.commons:commons-csv"
-fun DependencyHandler.`commons-csv`() = "$`commons-csv`:1.6"
+fun DependencyHandler.`commons-csv`() = "$`commons-csv`:$COMMONS_CSV"
 val DependencyHandler.`commons-net` get() = "commons-net:commons-net"
 fun DependencyHandler.`commons-net`() = "$`commons-net`:3.6"
 val DependencyHandler.dagger get() = "com.google.dagger:dagger"
