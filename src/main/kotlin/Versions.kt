@@ -5,6 +5,7 @@ import org.gradle.api.JavaVersion
 internal object Versions {
     const val AWSSDK = "2.7.28"
     const val AWS_JAVA_SDK = "1.11.414"
+    const val BEN_MANES = "0.25.0"
     const val DAGGER = "2.19"
     const val GUICE = "4.2.2"
     const val GRADLE = "5.6.2"

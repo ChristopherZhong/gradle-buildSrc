@@ -1,5 +1,6 @@
 @file:Suppress("ObjectPropertyName", "FunctionName", "unused", "SpellCheckingInspection")
 
+import Versions.BEN_MANES
 import Versions.KOTLIN
 import Versions.SPRING_BOOT
 import org.gradle.plugin.use.PluginDependenciesSpec
@@ -12,7 +13,7 @@ fun PluginDependenciesSpec.detekt(): PluginDependencySpec = detekt.version("1.0.
 val PluginDependenciesSpec.dokka: PluginDependencySpec get() = id("org.jetbrains.dokka")
 fun PluginDependenciesSpec.dokka(): PluginDependencySpec = dokka.version("0.9.18")
 val PluginDependenciesSpec.`gradle-versions-plugin`: PluginDependencySpec get() = id("com.github.ben-manes.versions")
-fun PluginDependenciesSpec.`gradle-versions-plugin`(): PluginDependencySpec = `gradle-versions-plugin`.version("0.22.0")
+fun PluginDependenciesSpec.`gradle-versions-plugin`(): PluginDependencySpec = `gradle-versions-plugin`.version(BEN_MANES)
 val PluginDependenciesSpec.`kotlin-jvm`: PluginDependencySpec get() = id("org.jetbrains.kotlin.jvm")
 fun PluginDependenciesSpec.`kotlin-jvm`(): PluginDependencySpec = `kotlin-jvm`.version(KOTLIN)
 val PluginDependenciesSpec.`kotlin-kapt`: PluginDependencySpec get() = id("org.jetbrains.kotlin.kapt")
