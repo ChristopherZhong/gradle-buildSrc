@@ -17,6 +17,7 @@ import Versions.KOTLINX
 import Versions.LOG4J
 import Versions.LOG4J_KOTLIN
 import Versions.MOCKITO
+import Versions.SPRING
 import Versions.SPRING_BOOT
 import Versions.TRUTH
 import org.gradle.api.artifacts.dsl.DependencyHandler
@@ -208,7 +209,7 @@ fun DependencyHandler.`spring-boot-starter-webflux`() = "$`spring-boot-starter-w
 val DependencyHandler.`spring-boot-starter-websocket` get() = "org.springframework.boot:spring-boot-starter-websocket"
 fun DependencyHandler.`spring-boot-starter-websocket`() = "$`spring-boot-starter-websocket`:$SPRING_BOOT"
 val DependencyHandler.`spring-context` get() = "org.springframework:spring-context"
-fun DependencyHandler.`spring-context`() = "$`spring-context`:5.1.5.RELEASE"
+fun DependencyHandler.`spring-context`() = "$`spring-context`:$SPRING"
 val DependencyHandler.`stripe-java` get() = "com.stripe:stripe-java"
 fun DependencyHandler.`stripe-java`() = "$`stripe-java`:7.0.0"
 val DependencyHandler.truth get() = "com.google.truth:truth"

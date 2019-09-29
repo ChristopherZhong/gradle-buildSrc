@@ -24,6 +24,7 @@ internal object Versions {
     const val LOG4J_KOTLIN = "1.0.0"
     const val MOCKITO = "3.0.0"
     const val SHIPKIT = "2.2.5"
+    const val SPRING = "5.1.9.RELEASE"
     const val SPRING_BOOT = "2.1.8.RELEASE"
     const val TRUTH = 0.42
 }
