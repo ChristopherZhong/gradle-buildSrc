@@ -1,5 +1,6 @@
 @file:Suppress("ObjectPropertyName", "FunctionName", "unused", "SpellCheckingInspection")
 
+import Versions.ASSERTJ
 import Versions.AWSSDK
 import Versions.AWS_JAVA_SDK
 import Versions.DAGGER
@@ -17,7 +18,7 @@ import Versions.TRUTH
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
 val DependencyHandler.`assertj-core` get() = "org.assertj:assertj-core"
-fun DependencyHandler.`assertj-core`() = "$`assertj-core`:3.13.2"
+fun DependencyHandler.`assertj-core`() = "$`assertj-core`:$ASSERTJ"
 val DependencyHandler.`awssdk-bom` get() = "software.amazon.awssdk:bom"
 fun DependencyHandler.`awssdk-bom`() = "$`awssdk-bom`:$AWSSDK"
 val DependencyHandler.`awssdk-dynamodb` get() = "software.amazon.awssdk:dynamodb"
