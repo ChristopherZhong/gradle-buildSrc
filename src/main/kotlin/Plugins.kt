@@ -4,7 +4,7 @@ import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
 internal fun PluginDependencySpec.applyIf(predicate: Boolean, version: String) =
-        if (predicate) version(version) else this
+        version(version)
 
 val PluginDependenciesSpec.bintray get() = bintray()
 fun PluginDependenciesSpec.bintray(hasVersion: Boolean = false) =
