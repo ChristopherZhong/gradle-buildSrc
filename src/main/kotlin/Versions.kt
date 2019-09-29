@@ -27,5 +27,5 @@ internal object Versions {
     const val SHIPKIT = "2.2.5"
     const val SPRING = "5.1.9.RELEASE"
     const val SPRING_BOOT = "2.1.8.RELEASE"
-    const val TRUTH = 0.42
+    const val TRUTH = "0.42"
 }
