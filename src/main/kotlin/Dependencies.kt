@@ -15,6 +15,7 @@ import Versions.KOIN
 import Versions.KOTLIN
 import Versions.KOTLINX
 import Versions.LOG4J
+import Versions.LOG4J_KOTLIN
 import Versions.MOCKITO
 import Versions.SPRING_BOOT
 import Versions.TRUTH
@@ -137,7 +138,7 @@ fun DependencyHandler.`log4j-1_2-api`() = "$`log4j-1_2-api`:$LOG4J"
 val DependencyHandler.`log4j-api` get() = "org.apache.logging.log4j:log4j-api"
 fun DependencyHandler.`log4j-api`() = "$`log4j-api`:$LOG4J"
 val DependencyHandler.`log4j-api-kotlin` get() = "org.apache.logging.log4j:log4j-api-kotlin"
-fun DependencyHandler.`log4j-api-kotlin`() = "$`log4j-api-kotlin`:1.0.0"
+fun DependencyHandler.`log4j-api-kotlin`() = "$`log4j-api-kotlin`:$LOG4J_KOTLIN"
 val DependencyHandler.`log4j-bom` get() = "org.apache.logging.log4j:log4j-bom"
 fun DependencyHandler.`log4j-bom`() = "$`log4j-bom`:$LOG4J"
 val DependencyHandler.`log4j-core` get() = "org.apache.logging.log4j:log4j-core"
