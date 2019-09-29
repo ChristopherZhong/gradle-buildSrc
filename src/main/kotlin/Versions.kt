@@ -19,7 +19,7 @@ internal object Versions {
     const val JUNIT5 = "5.5.2"
     const val KOIN = "1.0.2"
     const val KOTLIN = "1.3.50"
-    const val KOTLINX = "1.1.1"
+    const val KOTLINX = "1.3.1"
     const val LOG4J = "2.11.2"
     const val LOG4J_KOTLIN = "1.0.0"
     const val MOCKITO = "3.0.0"
