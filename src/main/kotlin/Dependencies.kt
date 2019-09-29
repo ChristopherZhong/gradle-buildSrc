@@ -9,6 +9,7 @@ import Versions.DAGGER
 import Versions.GUICE
 import Versions.JACKSON
 import Versions.JAVAFX
+import Versions.JAVAX_INJECT
 import Versions.JUNIT5
 import Versions.KOIN
 import Versions.KOTLIN
@@ -86,7 +87,7 @@ fun DependencyHandler.`javafx-swing`() = "$`javafx-swing`:$JAVAFX"
 val DependencyHandler.`javafx-web` get() = "org.openjfx:javafx-web"
 fun DependencyHandler.`javafx-web`() = "$`javafx-web`:$JAVAFX"
 val DependencyHandler.`javax-inject` get() = "javax.inject:javax.inject"
-fun DependencyHandler.`javax-inject`() = "$`javax-inject`:1"
+fun DependencyHandler.`javax-inject`() = "$`javax-inject`:$JAVAX_INJECT"
 val DependencyHandler.jmockit get() = "org.jmockit:jmockit"
 fun DependencyHandler.jmockit() = "$jmockit:1.43"
 val DependencyHandler.junit get() = "junit:junit"

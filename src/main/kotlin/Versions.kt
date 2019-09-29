@@ -15,6 +15,7 @@ internal object Versions {
     const val JACKSON = "2.9.9"
     val JAVA = JavaVersion.VERSION_12
     const val JAVAFX = "11.0.1"
+    const val JAVAX_INJECT = "1"
     const val JUNIT5 = "5.5.1"
     const val KOIN = "1.0.2"
     const val KOTLIN = "1.3.50"
