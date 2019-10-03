@@ -34,6 +34,7 @@ import Versions.MOCKITO
 import Versions.MOCKK
 import Versions.MOCK_FTP_SERVER
 import Versions.ORG_ECLIPSE_JDT_ANNOTATION
+import Versions.PICOCLI
 import Versions.RXJAVA
 import Versions.SLF4J_API
 import Versions.SPRING
@@ -183,6 +184,10 @@ val DependencyHandler.`mock-ftp-server` get() = "org.mockftpserver:MockFtpServer
 fun DependencyHandler.`mock-ftp-server`(version: String = MOCK_FTP_SERVER) = "$`mock-ftp-server`:$version"
 val DependencyHandler.`org-eclipse-jdt-annotation` get() = "org.eclipse.jdt:org.eclipse.jdt.annotation"
 fun DependencyHandler.`org-eclipse-jdt-annotation`(version: String = ORG_ECLIPSE_JDT_ANNOTATION) = "$`org-eclipse-jdt-annotation`:$version"
+val DependencyHandler.picocli get() = "info.picocli:picocli"
+fun DependencyHandler.picocli(version: String = PICOCLI) = "$picocli:$version"
+val DependencyHandler.`picocli-spring-boot-starter` get() = "info.picocli:picocli-spring-boot-starter"
+fun DependencyHandler.`picocli-spring-boot-starter`(version: String = PICOCLI) = "$`picocli-spring-boot-starter`:$version"
 val DependencyHandler.rxjava get() = "io.reactivex.rxjava2:rxjava"
 fun DependencyHandler.rxjava(version: String = RXJAVA) = "$rxjava:$version"
 val DependencyHandler.`slf4j-api` get() = "org.slf4j:slf4j-api"
