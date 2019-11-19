@@ -33,6 +33,7 @@ import Versions.LOMBOK
 import Versions.MOCKITO
 import Versions.MOCKK
 import Versions.MOCK_FTP_SERVER
+import Versions.OK_HTTP
 import Versions.ORG_ECLIPSE_JDT_ANNOTATION
 import Versions.PICOCLI
 import Versions.RXJAVA
@@ -182,6 +183,8 @@ val DependencyHandler.mockk get() = "io.mockk:mockk"
 fun DependencyHandler.mockk(version: String = MOCKK) = "$mockk:$version"
 val DependencyHandler.`mock-ftp-server` get() = "org.mockftpserver:MockFtpServer"
 fun DependencyHandler.`mock-ftp-server`(version: String = MOCK_FTP_SERVER) = "$`mock-ftp-server`:$version"
+val DependencyHandler.`ok-http` get() = "com.squareup.okhttp3:okhttp"
+fun DependencyHandler.`ok-http`(version: String = OK_HTTP) = "$`ok-http`:$version"
 val DependencyHandler.`org-eclipse-jdt-annotation` get() = "org.eclipse.jdt:org.eclipse.jdt.annotation"
 fun DependencyHandler.`org-eclipse-jdt-annotation`(version: String = ORG_ECLIPSE_JDT_ANNOTATION) = "$`org-eclipse-jdt-annotation`:$version"
 val DependencyHandler.picocli get() = "info.picocli:picocli"
