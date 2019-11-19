@@ -241,6 +241,8 @@ val DependencyHandler.`spring-boot-starter-websocket` get() = "org.springframewo
 fun DependencyHandler.`spring-boot-starter-websocket`(version: String = SPRING_BOOT) = "$`spring-boot-starter-websocket`:$version"
 val DependencyHandler.`spring-context` get() = "org.springframework:spring-context"
 fun DependencyHandler.`spring-context`(version: String = SPRING) = "$`spring-context`:$version"
+val DependencyHandler.`spring-web` get() = "org.springframework:spring-web"
+fun DependencyHandler.`spring-web`(version: String = SPRING) = "$`spring-web`:$version"
 val DependencyHandler.`stripe-java` get() = "com.stripe:stripe-java"
 fun DependencyHandler.`stripe-java`(version: String = STRIPE_JAVA) = "$`stripe-java`:$version"
 val DependencyHandler.truth get() = "com.google.truth:truth"
