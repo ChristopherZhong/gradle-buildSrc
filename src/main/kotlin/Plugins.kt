@@ -7,6 +7,7 @@ import Versions.DOKKA
 import Versions.KOTLIN
 import Versions.NEBULA_PUBLISH
 import Versions.NEBULA_RELEASE
+import Versions.SHADOW_JAR
 import Versions.SHIPKIT
 import Versions.SPRING_BOOT
 import Versions.SPRING_DEPENDENCY_MANAGEMENT
@@ -37,6 +38,8 @@ val PluginDependenciesSpec.`nebula-release`: PluginDependencySpec get() = id("ne
 fun PluginDependenciesSpec.`nebula-release`(version: String = NEBULA_RELEASE): PluginDependencySpec = `nebula-release`.version(version)
 val PluginDependenciesSpec.`nebula-source-jar`: PluginDependencySpec get() = id("nebula.source-jar")
 fun PluginDependenciesSpec.`nebula-source-jar`(version: String = NEBULA_PUBLISH): PluginDependencySpec = `nebula-source-jar`.version(version)
+val PluginDependenciesSpec.`shadow-jar`: PluginDependencySpec get() = id("com.github.johnrengelman.shadow")
+fun PluginDependenciesSpec.`shadow-jar`(version: String = SHADOW_JAR): PluginDependencySpec = `shadow-jar`.version(version)
 val PluginDependenciesSpec.`shipkit-java`: PluginDependencySpec get() = id("org.shipkit.java")
 fun PluginDependenciesSpec.`shipkit-java`(version: String = SHIPKIT): PluginDependencySpec = `shipkit-java`.version(version)
 val PluginDependenciesSpec.`spring-boot`: PluginDependencySpec get() = id("org.springframework.boot")

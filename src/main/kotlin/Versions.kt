@@ -46,6 +46,7 @@ internal object Versions {
     const val ORG_ECLIPSE_JDT_ANNOTATION = "2.2.100"
     const val PICOCLI = "4.0.4"
     const val RXJAVA = "2.2.4"
+    const val SHADOW_JAR = "5.2.0"
     const val SHIPKIT = "2.2.5"
     const val SLF4J_API = "1.7.25"
     const val SPRING = "5.1.9.RELEASE"
