@@ -41,7 +41,7 @@ internal object Versions {
     const val MOCKITO = "3.0.0"
     const val MOCKK = "1.9.3"
     const val MOCK_FTP_SERVER = "2.7.1"
-    const val NEBULA_PUBLISH = "9.4.5"
+    const val NEBULA_PUBLISH = "17.2.1"
     const val NEBULA_RELEASE = "9.2.0"
     const val OK_HTTP = "4.2.2"
     const val ORG_ECLIPSE_JDT_ANNOTATION = "2.2.100"
