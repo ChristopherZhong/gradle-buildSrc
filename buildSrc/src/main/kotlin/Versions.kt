@@ -9,7 +9,7 @@ internal object Versions {
     const val AWS_LAMBDA_CORE = "1.2.0"
     const val AWS_LAMBDA_EVENTS = "2.2.2"
     const val AWS_LAMBDA_LOG4J2 = "1.1.0"
-    const val BEN_MANES = "0.27.0"
+    const val BEN_MANES = "0.28.0"
     const val BINTRAY = "1.8.4"
     const val COMMONS_CSV = "1.7"
     const val COMMONS_NET = "3.6"
