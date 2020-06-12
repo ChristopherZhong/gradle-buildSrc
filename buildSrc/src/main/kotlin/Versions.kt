@@ -51,7 +51,7 @@ internal object Versions {
     const val SHIPKIT = "2.3.1"
     const val SLF4J_API = "1.7.25"
     const val SPRING = "5.1.9.RELEASE"
-    const val SPRING_BOOT = "2.2.1.RELEASE"
+    const val SPRING_BOOT = "2.3.1.RELEASE"
     const val SPRING_DEPENDENCY_MANAGEMENT = "1.0.9.RELEASE"
     const val STRIPE_JAVA = "7.0.0"
     const val TRUTH = "0.42"
