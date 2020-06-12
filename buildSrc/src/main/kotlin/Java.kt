@@ -1,5 +1,3 @@
-@file:Suppress("unused")
-
 import Versions.JAVA
 import org.gradle.api.plugins.JavaPluginExtension
 

@@ -1,4 +1,4 @@
-@file:Suppress("ObjectPropertyName", "FunctionName", "unused", "SpellCheckingInspection")
+@file:Suppress("ObjectPropertyName", "FunctionName", "SpellCheckingInspection")
 
 import Versions.BEN_MANES
 import Versions.BINTRAY
@@ -14,11 +14,11 @@ import Versions.SPRING_DEPENDENCY_MANAGEMENT
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
-val PluginDependenciesSpec.bintray: PluginDependencySpec get() = id("com.jfrog.bintray")
+val PluginDependenciesSpec.bintray: PluginDependencySpec get() = id("com.jfrog.getBintray")
 fun PluginDependenciesSpec.bintray(version: String = BINTRAY): PluginDependencySpec = bintray.version(version)
-val PluginDependenciesSpec.detekt: PluginDependencySpec get() = id("io.gitlab.arturbosch.detekt")
+val PluginDependenciesSpec.detekt: PluginDependencySpec get() = id("io.gitlab.arturbosch.getDetekt")
 fun PluginDependenciesSpec.detekt(version: String = DETEKT): PluginDependencySpec = detekt.version(version)
-val PluginDependenciesSpec.dokka: PluginDependencySpec get() = id("org.jetbrains.dokka")
+val PluginDependenciesSpec.dokka: PluginDependencySpec get() = id("org.jetbrains.getDokka")
 fun PluginDependenciesSpec.dokka(version: String = DOKKA): PluginDependencySpec = dokka.version(version)
 val PluginDependenciesSpec.`gradle-versions-plugin`: PluginDependencySpec get() = id("com.github.ben-manes.versions")
 fun PluginDependenciesSpec.`gradle-versions-plugin`(version: String = BEN_MANES): PluginDependencySpec = `gradle-versions-plugin`.version(version)

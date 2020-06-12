@@ -1,5 +1,5 @@
 plugins {
-    `kotlin-dsl`
+    `gradle-versions-plugin`()
 }
 
 repositories {
@@ -8,5 +8,5 @@ repositories {
 
 tasks.wrapper {
     distributionType = Wrapper.DistributionType.ALL
-    gradleVersion = "6.0"
+    gradleVersion = GRADLE_VERSION
 }
