@@ -17,7 +17,7 @@ internal object Versions {
     const val DETEKT = "1.0.0-RC12"
     const val DOKKA = "0.9.18"
     const val GUICE = "4.2.2"
-    const val GRADLE = "6.0"
+    const val GRADLE = "6.5"
     const val GRAPHIQL_SPRING_BOOT_STARTER = "5.0.2"
     const val GRAPHQL_JAVA = "13.0"
     const val GRAPHQL_JAVA_TOOLS = "5.2.4"
