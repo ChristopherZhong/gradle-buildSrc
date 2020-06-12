@@ -14,7 +14,7 @@ internal object Versions {
     const val COMMONS_CSV = "1.7"
     const val COMMONS_NET = "3.6"
     const val DAGGER = "2.19"
-    const val DETEKT = "1.0.0-RC12"
+    const val DETEKT = "1.9.1"
     const val DOKKA = "0.9.18"
     const val GUICE = "4.2.2"
     const val GRADLE = "6.5"
