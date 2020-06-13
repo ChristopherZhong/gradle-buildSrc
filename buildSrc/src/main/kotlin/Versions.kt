@@ -6,7 +6,7 @@ internal object Versions {
     const val ASSERTJ = "3.16.1"
     const val AWSSDK = "2.13.30"
     const val AWS_JAVA_SDK = "1.11.796"
-    const val AWS_LAMBDA_CORE = "1.2.0"
+    const val AWS_LAMBDA_CORE = "1.2.1"
     const val AWS_LAMBDA_EVENTS = "2.2.2"
     const val AWS_LAMBDA_LOG4J2 = "1.1.0"
     const val BEN_MANES = "0.28.0"
