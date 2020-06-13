@@ -24,7 +24,7 @@ internal object Versions {
     const val GRAPHQL_JAVA_SPRING_BOOT_STARTER_WEBFLUX = "1.0"
     const val GRAPHQL_SPRING_BOOT_STARTER = "5.0.2"
     const val HTTPCORE = "4.4.10"
-    const val JACKSON = "2.9.9"
+    const val JACKSON = "2.11.0"
     val JAVA = JavaVersion.VERSION_11
     const val JAVAFX = "11.0.1"
     const val JAVAX_INJECT = "1"
