@@ -39,7 +39,7 @@ internal object Versions {
     const val LOG4J_KOTLIN = "1.0.0"
     const val LOMBOK = "1.18.4"
     const val MOCKITO = "3.0.0"
-    const val MOCKK = "1.9.3"
+    const val MOCKK = "1.10.0"
     const val MOCK_FTP_SERVER = "2.7.1"
     const val NEBULA_PUBLISH = "17.2.1"
     const val NEBULA_RELEASE = "15.0.2"
