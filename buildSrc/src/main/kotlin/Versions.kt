@@ -29,7 +29,7 @@ internal object Versions {
     const val JAVAFX = "11.0.1"
     const val JAVAX_INJECT = "1"
     const val JMOCKIT = "1.49"
-    const val JUNIT = "4.12"
+    const val JUNIT = "4.13"
     const val JUNIT5 = "5.5.2"
     const val KODEIN_DI_GENEREIC_JVM = "6.0.1"
     const val KOIN = "1.0.2"
