@@ -16,7 +16,7 @@ internal object Versions {
     const val DAGGER = "2.28"
     const val DETEKT = "1.9.1"
     const val DOKKA = "0.10.1"
-    const val GUICE = "4.2.2"
+    const val GUICE = "4.2.3"
     const val GRADLE = "6.5"
     const val GRAPHIQL_SPRING_BOOT_STARTER = "5.0.2"
     const val GRAPHQL_JAVA = "13.0"
