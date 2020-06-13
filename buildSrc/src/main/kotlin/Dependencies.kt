@@ -91,7 +91,6 @@ fun DependencyHandler.`kodein-erased-jvm`(version: String = KODEIN_DI) = "org.ko
 fun DependencyHandler.`kodein-generic-jvm`(version: String = KODEIN_DI) = "org.kodein.di:kodein-di-generic-jvm:$version"
 fun DependencyHandler.`koin-core`(version: String = KOIN) = "org.koin:koin-core:$version"
 fun DependencyHandler.`koin-core-ext`(version: String = KOIN) = "org.koin:koin-core-ext:$version"
-fun DependencyHandler.`koin-java`(version: String = KOIN) = "org.koin:koin-java:$version"
 fun DependencyHandler.`koin-test`(version: String = KOIN) = "org.koin:koin-test:$version"
 fun DependencyHandler.`kotlin-bom`(version: String = KOTLIN) = "org.jetbrains.kotlin:kotlin-bom:$version"
 val DependencyHandler.`kotlin-reflect` get() = "org.jetbrains.kotlin:kotlin-reflect"
