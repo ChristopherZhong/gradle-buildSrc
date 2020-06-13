@@ -23,7 +23,7 @@ import Versions.JAVAX_INJECT
 import Versions.JMOCKIT
 import Versions.JUNIT
 import Versions.JUNIT5
-import Versions.KODEIN_DI_GENEREIC_JVM
+import Versions.KODEIN_DI
 import Versions.KOIN
 import Versions.KOTLIN
 import Versions.KOTLINX
@@ -87,7 +87,8 @@ val DependencyHandler.`junit-jupiter-api` get() = "org.junit.jupiter:junit-jupit
 val DependencyHandler.`junit-jupiter-engine` get() = "org.junit.jupiter:junit-jupiter-engine"
 val DependencyHandler.`junit-jupiter-params` get() = "org.junit.jupiter:junit-jupiter-params"
 val DependencyHandler.`junit-vintage-engine` get() = "org.junit.vintage:junit-vintage-engine"
-fun DependencyHandler.`kodein-di-generic-jvm`(version: String = KODEIN_DI_GENEREIC_JVM) = "org.kodein.di:kodein-di-generic-jvm:$version"
+fun DependencyHandler.`kodein-erased-jvm`(version: String = KODEIN_DI) = "org.kodein.di:kodein-di-erased-jvm:$version"
+fun DependencyHandler.`kodein-generic-jvm`(version: String = KODEIN_DI) = "org.kodein.di:kodein-di-generic-jvm:$version"
 fun DependencyHandler.`koin-core`(version: String = KOIN) = "org.koin:koin-core:$version"
 fun DependencyHandler.`koin-core-ext`(version: String = KOIN) = "org.koin:koin-core-ext:$version"
 fun DependencyHandler.`koin-java`(version: String = KOIN) = "org.koin:koin-java:$version"

@@ -31,7 +31,7 @@ internal object Versions {
     const val JMOCKIT = "1.49"
     const val JUNIT = "4.13"
     const val JUNIT5 = "5.6.2"
-    const val KODEIN_DI_GENEREIC_JVM = "6.5.5"
+    const val KODEIN_DI = "6.5.5"
     const val KOIN = "2.1.6"
     const val KOTLIN = "1.3.72"
     const val KOTLINX = "1.3.1"
