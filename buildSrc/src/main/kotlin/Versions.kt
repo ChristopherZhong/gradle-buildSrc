@@ -46,7 +46,7 @@ internal object Versions {
     const val OK_HTTP = "4.8.1"
     const val ORG_ECLIPSE_JDT_ANNOTATION = "2.2.400"
     const val PICOCLI = "4.5.1"
-    const val RXJAVA = "2.2.4"
+    const val RXJAVA = "2.2.19"
     const val SHADOW_JAR = "6.0.0"
     const val SHIPKIT = "2.3.1"
     const val SLF4J_API = "1.7.25"
