@@ -37,7 +37,7 @@ internal object Versions {
     const val KOTLINX = "1.3.1"
     const val LOG4J = "2.13.3"
     const val LOG4J_KOTLIN = "1.0.0"
-    const val LOMBOK = "1.18.4"
+    const val LOMBOK = "1.18.12"
     const val MOCKITO = "3.0.0"
     const val MOCKK = "1.10.0"
     const val MOCK_FTP_SERVER = "2.7.1"
