@@ -12,7 +12,7 @@ internal object Versions {
     const val BEN_MANES = "0.29.0"
     const val BINTRAY = "1.8.5"
     const val COMMONS_CSV = "1.8"
-    const val COMMONS_NET = "3.6"
+    const val COMMONS_NET = "3.7"
     const val DAGGER = "2.28.3"
     const val DETEKT = "1.9.1"
     const val DOKKA = "0.10.1"
