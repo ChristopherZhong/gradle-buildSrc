@@ -43,7 +43,7 @@ internal object Versions {
     const val MOCK_FTP_SERVER = "2.7.1"
     const val NEBULA_PUBLISH = "17.2.1"
     const val NEBULA_RELEASE = "15.0.2"
-    const val OK_HTTP = "4.7.2"
+    const val OK_HTTP = "4.8.1"
     const val ORG_ECLIPSE_JDT_ANNOTATION = "2.2.400"
     const val PICOCLI = "4.3.2"
     const val RXJAVA = "2.2.4"
