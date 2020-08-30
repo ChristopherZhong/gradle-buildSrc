@@ -21,7 +21,7 @@ internal object Versions {
     const val GRAPHIQL_SPRING_BOOT_STARTER = "5.0.2"
     const val GRAPHQL_JAVA = "15.0"
     const val GRAPHQL_JAVA_TOOLS = "5.2.4"
-    const val GRAPHQL_JAVA_SPRING_BOOT_STARTER_WEBFLUX = "1.0"
+    const val GRAPHQL_JAVA_SPRING_BOOT_STARTER_WEBFLUX = "2.0"
     const val GRAPHQL_SPRING_BOOT_STARTER = "5.0.2"
     const val HTTPCORE = "4.4.13"
     const val JACKSON = "2.11.2"
