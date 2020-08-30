@@ -52,7 +52,7 @@ internal object Versions {
     const val SLF4J_API = "1.7.25"
     const val SPRING = "5.1.9.RELEASE"
     const val SPRING_BOOT = "2.3.3.RELEASE"
-    const val SPRING_DEPENDENCY_MANAGEMENT = "1.0.9.RELEASE"
+    const val SPRING_DEPENDENCY_MANAGEMENT = "1.0.10.RELEASE"
     const val STRIPE_JAVA = "19.45.0"
     const val TRUTH = "1.0.1"
     const val VALIDATION_API = "2.0.1.Final"
