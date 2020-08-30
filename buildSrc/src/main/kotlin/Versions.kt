@@ -41,6 +41,7 @@ internal object Versions {
     const val MOCKITO = "3.5.7"
     const val MOCKK = "1.10.0"
     const val MOCK_FTP_SERVER = "2.7.1"
+    const val NEBULA_KOTLIN = "1.3.72"
     const val NEBULA_PUBLISH = "17.3.2"
     const val NEBULA_RELEASE = "15.1.0"
     const val OK_HTTP = "4.8.1"

@@ -5,6 +5,7 @@ import Versions.BINTRAY
 import Versions.DETEKT
 import Versions.DOKKA
 import Versions.KOTLIN
+import Versions.NEBULA_KOTLIN
 import Versions.NEBULA_PUBLISH
 import Versions.NEBULA_RELEASE
 import Versions.SHADOW_JAR
@@ -27,7 +28,7 @@ fun PluginDependenciesSpec.`kotlin-jvm`(version: String = KOTLIN): PluginDepende
 val PluginDependenciesSpec.`kotlin-kapt`: PluginDependencySpec get() = id("org.jetbrains.kotlin.kapt")
 fun PluginDependenciesSpec.`kotlin-kapt`(version: String = KOTLIN): PluginDependencySpec = `kotlin-kapt`.version(version)
 val PluginDependenciesSpec.`nebula-kotlin`: PluginDependencySpec get() = id("nebula.kotlin")
-fun PluginDependenciesSpec.`nebula-kotlin`(version: String = KOTLIN): PluginDependencySpec = `nebula-kotlin`.version(version)
+fun PluginDependenciesSpec.`nebula-kotlin`(version: String = NEBULA_KOTLIN): PluginDependencySpec = `nebula-kotlin`.version(version)
 val PluginDependenciesSpec.`nebula-javadoc-jar`: PluginDependencySpec get() = id("nebula.javadoc-jar")
 fun PluginDependenciesSpec.`nebula-javadoc-jar`(version: String = NEBULA_PUBLISH): PluginDependencySpec = `nebula-javadoc-jar`.version(version)
 val PluginDependenciesSpec.`nebula-maven-publish`: PluginDependencySpec get() = id("nebula.maven-publish")
