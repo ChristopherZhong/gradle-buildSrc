@@ -3,7 +3,7 @@
 import org.gradle.api.JavaVersion
 
 internal object Versions {
-    const val ASSERTJ = "3.16.1"
+    const val ASSERTJ = "3.17.1"
     const val AWSSDK = "2.14.7"
     const val AWS_JAVA_SDK = "1.11.851"
     const val AWS_LAMBDA_CORE = "1.2.1"
